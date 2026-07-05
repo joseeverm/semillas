@@ -1,16 +1,53 @@
-import type { Lesson, World } from "../types/content";
+import type { Lesson, UnitMeta, World } from "../types/content";
 
-// One JSON file per world in ./worlds; every file found is part of the app
-// content, so adding a world is just dropping its JSON there. JSON imports
-// widen literals (e.g. `type: string`), so cast through unknown.
-const worldModules = import.meta.glob("./worlds/*.json", {
+/**
+ * One folder per world in ./worlds: `meta.json` (world data + ordered units)
+ * plus one JSON per unit (booklet) with its lessons. Every folder found is
+ * part of the app content, so adding a world or a unit is just dropping its
+ * JSON there. JSON imports widen literals (e.g. `type: string`), so cast
+ * through unknown.
+ */
+interface WorldMeta {
+  id: string;
+  title: string;
+  description: string;
+  order: number;
+  units: UnitMeta[];
+}
+
+/** Shape of a unit file on disk: its lessons don't carry `unit` yet. */
+interface UnitFile {
+  unit: string;
+  lessons: Omit<Lesson, "unit">[];
+}
+
+const metaModules = import.meta.glob("./worlds/*/meta.json", {
   eager: true,
   import: "default",
 });
+const unitModules = import.meta.glob(
+  ["./worlds/*/*.json", "!./worlds/*/meta.json"],
+  { eager: true, import: "default" },
+);
 
-export const worlds: World[] = (
-  Object.values(worldModules) as unknown as World[]
-).sort((a, b) => a.order - b.order);
+function assembleWorld(metaPath: string, meta: WorldMeta): World {
+  const worldDir = metaPath.slice(0, -"meta.json".length);
+  const unitFiles = Object.entries(unitModules)
+    .filter(([path]) => path.startsWith(worldDir))
+    .map(([, file]) => file as unknown as UnitFile);
+  // Lessons grouped by unit following meta's unit order, keeping each file's
+  // own lesson order; `unit` is resolved onto every lesson here, in memory.
+  const lessons: Lesson[] = meta.units.flatMap((unit) =>
+    unitFiles
+      .filter((file) => file.unit === unit.id)
+      .flatMap((file) => file.lessons.map((l) => ({ ...l, unit: unit.id }))),
+  );
+  return { ...meta, lessons };
+}
+
+export const worlds: World[] = Object.entries(metaModules)
+  .map(([path, meta]) => assembleWorld(path, meta as unknown as WorldMeta))
+  .sort((a, b) => a.order - b.order);
 
 export function findWorld(worldId: string): World | undefined {
   return worlds.find((w) => w.id === worldId);

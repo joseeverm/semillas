@@ -1,15 +1,30 @@
 /**
- * Drives the Semillas app end-to-end over the 4 Aspirante lessons:
- * - world page shows the four lessons in content order
+ * Drives the Semillas app end-to-end over every Aspirante lesson:
+ * - world page shows unit headers and the lessons in content order
  * - every lesson playable start to finish
- * - lesson 1: fail the ordering question (wrong-order validation + requeue)
- * - lesson 3: fail the "lema" fill_blank (wrong words + requeue); this lesson
- *   has TWO fill_blank questions, so the driver disambiguates them by the
- *   rendered statement fragment.
+ * - one deliberate failure in lesson 1 (ordering) and lesson 3 (fill_blank)
+ *   to check wrong-answer validation + requeue at the end of the queue
+ * The world is assembled from its folder (meta.json + unit files), same as
+ * src/data/index.ts does, so the driver adapts to whatever content exists.
  */
 const { chromium } = require("playwright-core");
-const world = require("/home/jose/projects/semillas/client/src/data/worlds/aspirante.json");
 const fs = require("fs");
+const path = require("path");
+
+const WORLD_DIR = "/home/jose/projects/semillas/client/src/data/worlds/aspirante";
+const meta = require(path.join(WORLD_DIR, "meta.json"));
+const unitFiles = fs
+  .readdirSync(WORLD_DIR)
+  .filter((f) => f.endsWith(".json") && f !== "meta.json")
+  .map((f) => require(path.join(WORLD_DIR, f)));
+const world = {
+  ...meta,
+  lessons: meta.units.flatMap((unit) =>
+    unitFiles
+      .filter((file) => file.unit === unit.id)
+      .flatMap((file) => file.lessons.map((l) => ({ ...l, unit: unit.id }))),
+  ),
+};
 
 const BASE = "http://localhost:5199";
 const SHOTS = __dirname + "/shots4";
@@ -139,23 +154,31 @@ async function expectText(page, text, label) {
     if (m.type() === "error") log(`  [CONSOLE ERROR] ${m.text()}`);
   });
 
-  log("== Mapa -> mundo Aspirante: orden de las 4 lecciones ==");
+  log("== Mapa -> mundo Aspirante: encabezados de unidad y orden de lecciones ==");
   await page.goto(BASE);
   await expectText(page, "0 XP", "XP inicial 0");
   await page.getByText("Aspirante a Campista").first().click();
   for (const lesson of world.lessons) await page.getByText(lesson.title).waitFor();
+  // Interleaved expectation: each unit-with-lessons contributes its header
+  // followed by its lesson titles, in meta order.
+  const expectedSequence = meta.units.flatMap((unit) => {
+    const titles = world.lessons.filter((l) => l.unit === unit.id).map((l) => l.title);
+    return titles.length > 0 ? [unit.title, ...titles] : [];
+  });
   const positions = await page
     .locator("main")
     .evaluate(
-      (main, titles) => titles.map((t) => main.textContent.indexOf(t)),
-      world.lessons.map((l) => l.title),
+      (main, texts) => texts.map((t) => main.textContent.indexOf(t)),
+      expectedSequence,
     );
   for (let i = 0; i < positions.length; i++) {
     if (positions[i] === -1 || (i > 0 && positions[i] <= positions[i - 1]))
-      throw new Error(`orden de lecciones inesperado: ${JSON.stringify(positions)}`);
+      throw new Error(
+        `orden inesperado de encabezados/lecciones: ${JSON.stringify(positions)} para ${JSON.stringify(expectedSequence)}`,
+      );
   }
-  log(`  [ok] las ${world.lessons.length} lecciones aparecen en el orden del JSON`);
-  await shot(page, "mundo-4-lecciones");
+  log(`  [ok] encabezado(s) de unidad y ${world.lessons.length} lecciones en el orden esperado`);
+  await shot(page, "mundo-lecciones");
 
   for (const [i, lesson] of world.lessons.entries()) {
     // Fail once per requeue-check lesson: ordering in L1, "lema" fill_blank in L3.
@@ -167,6 +190,9 @@ async function expectText(page, text, label) {
           : null;
     log(`== Lección ${i + 1}: ${lesson.title}${failQuestion ? ` (fallando una ${failQuestion.type})` : ""} ==`);
     await page.getByText(lesson.title).first().click();
+    // The world page also has h2s (unit headers): wait until the lesson
+    // screen is up before playLesson starts reading `main h2`.
+    await page.getByRole("button", { name: "Comprobar" }).waitFor();
     const seen = await playLesson(page, lesson, { failQuestion, shotPrefix: `l${i + 1}` });
 
     const expectedScreens = lesson.questions.length + (failQuestion ? 1 : 0);

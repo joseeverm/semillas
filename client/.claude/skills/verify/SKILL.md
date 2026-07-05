@@ -23,11 +23,13 @@ pregunta y comprobar que se reencola al final.
 ## Driver
 
 `drive-worlds.js` (en esta carpeta) es **genérico respecto al contenido**:
-lee el JSON del mundo como fuente de verdad y juega todas sus lecciones.
-Copiarlo al scratchpad, ajustar la constante del path del mundo/`BASE` si
-hace falta, y correrlo con `node`. Comprueba:
+ensambla el mundo desde su carpeta (`meta.json` + archivos de unidad, igual
+que `src/data/index.ts`) y juega todas sus lecciones. Copiarlo al scratchpad,
+ajustar `WORLD_DIR`/`BASE` si hace falta, y correrlo con `node` (necesita
+`playwright-core` instalado en el cwd). Comprueba:
 
-- orden de las lecciones en la página del mundo (según el array del JSON),
+- encabezados de unidad y orden de las lecciones en la página del mundo
+  (unidades según `units` del meta, lecciones según su archivo),
 - cada lección de inicio a fin con respuestas correctas,
 - fallo deliberado + reencolado al final (ordering en la lección 1 y un
   fill_blank en la 3; ajustar índices si cambia el contenido),

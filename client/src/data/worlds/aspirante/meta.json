@@ -1,0 +1,24 @@
+{
+  "id": "aspirante",
+  "title": "Aspirante a Campista",
+  "description": "Los fundamentos del programa: historia, mística y símbolos",
+  "order": 1,
+  "units": [
+    {
+      "id": "crecimiento-personal",
+      "title": "Crecimiento Personal"
+    },
+    {
+      "id": "tecnicas",
+      "title": "Técnicas Campamentiles"
+    },
+    {
+      "id": "ambiental",
+      "title": "Conciencia Ambiental"
+    },
+    {
+      "id": "salud",
+      "title": "Prevención y Salud"
+    }
+  ]
+}

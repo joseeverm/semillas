@@ -83,13 +83,30 @@ export interface Lesson {
   title: string;
   xp: number;
   questions: Question[];
+  /**
+   * Id of the unit (booklet) the lesson belongs to. Resolved at assembly time
+   * in `src/data/index.ts` from the unit file that carries the lesson; the
+   * lesson JSON itself does not store it.
+   */
+  unit: string;
 }
 
-/** One world per program level, stored as one JSON file in `src/data/worlds/`. */
+/** One booklet ("cartilla") within a world. User-facing `title`: Spanish. */
+export interface UnitMeta {
+  id: string;
+  title: string;
+}
+
+/**
+ * One world per program level, stored as one folder in `src/data/worlds/`
+ * (`meta.json` + one JSON per unit) and assembled in `src/data/index.ts`.
+ */
 export interface World {
   id: string;
   title: string;
   description: string;
   order: number;
+  /** Units in display order; lessons are grouped by unit in this order. */
+  units: UnitMeta[];
   lessons: Lesson[];
 }

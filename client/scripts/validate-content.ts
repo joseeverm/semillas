@@ -1,5 +1,7 @@
 /**
- * Validates every world JSON in src/data/worlds/ against the content schema.
+ * Validates the content under src/data/worlds/ against the content schema.
+ * Structure: one folder per world with `meta.json` (world data + ordered
+ * units) plus one JSON per unit (booklet) named `<unit>.json`.
  * Runs with plain Node (type stripping): `pnpm validate:content`. It is also
  * the first step of `pnpm build`, so invalid content never ships.
  *
@@ -153,15 +155,28 @@ const lessonSchema = z.object({
   questions: z.array(questionSchema).min(1, "la lección no tiene preguntas"),
 });
 
-const worldSchema = z.object({
-  id: nonEmpty,
-  title: nonEmpty,
-  description: nonEmpty,
-  order: z.number().int().positive("order debe ser un entero positivo"),
-  lessons: z.array(lessonSchema).min(1, "el mundo no tiene lecciones"),
+const metaSchema = z
+  .object({
+    id: nonEmpty,
+    title: nonEmpty,
+    description: nonEmpty,
+    order: z.number().int().positive("order debe ser un entero positivo"),
+    units: z
+      .array(z.object({ id: nonEmpty, title: nonEmpty }))
+      .min(1, "el mundo no declara ninguna unidad (cartilla)"),
+  })
+  .superRefine((meta, ctx) => {
+    reportDuplicates(meta.units.map((u) => u.id), "units (id)", ctx);
+    reportDuplicates(meta.units.map((u) => u.title), "units (title)", ctx);
+  });
+
+const unitFileSchema = z.object({
+  unit: nonEmpty,
+  lessons: z.array(lessonSchema).min(1, "el archivo de unidad no tiene lecciones"),
 });
 
-type World = z.infer<typeof worldSchema>;
+type WorldMeta = z.infer<typeof metaSchema>;
+type UnitFile = z.infer<typeof unitFileSchema>;
 
 /**
  * Turns a Zod issue path like ["lessons", 0, "questions", 2, "answer"] into
@@ -192,66 +207,120 @@ function describePath(raw: unknown, path: PropertyKey[]): string {
   return parts.join(" › ");
 }
 
-const files = readdirSync(worldsDir)
-  .filter((f) => f.endsWith(".json"))
-  .sort();
-
-if (files.length === 0) {
-  console.error(`✗ No hay ningún JSON de mundo en ${worldsDir}`);
-  process.exit(1);
-}
-
 const errors: string[] = [];
-const worlds: { file: string; world: World }[] = [];
 
-for (const file of files) {
+function parseFile<T>(relPath: string, schema: z.ZodType<T>): T | undefined {
   let raw: unknown;
   try {
-    raw = JSON.parse(readFileSync(join(worldsDir, file), "utf8"));
+    raw = JSON.parse(readFileSync(join(worldsDir, relPath), "utf8"));
   } catch (error) {
-    errors.push(`${file}: JSON inválido — ${(error as Error).message}`);
-    continue;
+    errors.push(`${relPath}: JSON inválido — ${(error as Error).message}`);
+    return undefined;
   }
-  const result = worldSchema.safeParse(raw);
+  const result = schema.safeParse(raw);
   if (!result.success) {
     for (const issue of result.error.issues) {
       const where = describePath(raw, issue.path);
-      errors.push(`${file}${where ? ` › ${where}` : ""}: ${issue.message}`);
+      errors.push(`${relPath}${where ? ` › ${where}` : ""}: ${issue.message}`);
     }
-    continue;
+    return undefined;
   }
-  worlds.push({ file, world: result.data });
+  return result.data;
 }
 
-// Cross-file checks: stable ids/orders across the whole content set.
-const seenWorldIds = new Map<string, string>();
-const seenOrders = new Map<number, string>();
-const seenLessonIds = new Map<string, string>();
-for (const { file, world } of worlds) {
-  if (basename(file, ".json") !== world.id) {
+const entries = readdirSync(worldsDir, { withFileTypes: true });
+for (const entry of entries) {
+  if (entry.isFile() && entry.name.endsWith(".json")) {
     errors.push(
-      `${file}: el archivo debería llamarse "${world.id}.json" (id del mundo)`,
+      `${entry.name}: archivo suelto en worlds/ — el contenido vive en carpetas por mundo (worlds/<mundo>/meta.json + <unidad>.json)`,
     );
   }
-  const idOwner = seenWorldIds.get(world.id);
-  if (idOwner) {
-    errors.push(`${file}: id de mundo "${world.id}" repetido (ya está en ${idOwner})`);
+}
+const worldDirs = entries
+  .filter((e) => e.isDirectory())
+  .map((e) => e.name)
+  .sort();
+
+if (worldDirs.length === 0) {
+  console.error(`✗ No hay ninguna carpeta de mundo en ${worldsDir}`);
+  process.exit(1);
+}
+
+interface ParsedWorld {
+  dir: string;
+  meta: WorldMeta;
+  lessonCount: number;
+}
+const parsedWorlds: ParsedWorld[] = [];
+const seenLessonIds = new Map<string, string>();
+let questionCount = 0;
+let unitFileCount = 0;
+
+for (const dir of worldDirs) {
+  const files = readdirSync(join(worldsDir, dir))
+    .filter((f) => f.endsWith(".json"))
+    .sort();
+  if (!files.includes("meta.json")) {
+    errors.push(`${dir}/: falta meta.json`);
+    continue;
   }
-  seenWorldIds.set(world.id, file);
-  const orderOwner = seenOrders.get(world.order);
-  if (orderOwner) {
-    errors.push(`${file}: order ${world.order} repetido (ya está en ${orderOwner})`);
+  const meta = parseFile(`${dir}/meta.json`, metaSchema);
+  if (!meta) continue;
+  if (meta.id !== dir) {
+    errors.push(
+      `${dir}/meta.json: la carpeta debería llamarse "${meta.id}" (id del mundo)`,
+    );
   }
-  seenOrders.set(world.order, file);
-  for (const lesson of world.lessons) {
-    const lessonOwner = seenLessonIds.get(lesson.id);
-    if (lessonOwner) {
+
+  let lessonCount = 0;
+  for (const file of files) {
+    if (file === "meta.json") continue;
+    const relPath = `${dir}/${file}`;
+    const unitFile: UnitFile | undefined = parseFile(relPath, unitFileSchema);
+    if (!unitFile) continue;
+    unitFileCount++;
+    if (!meta.units.some((u) => u.id === unitFile.unit)) {
       errors.push(
-        `${file}: id de lección "${lesson.id}" repetido (ya está en ${lessonOwner})`,
+        `${relPath}: unit "${unitFile.unit}" no está declarada en las units de meta.json`,
       );
     }
-    seenLessonIds.set(lesson.id, file);
+    if (basename(file, ".json") !== unitFile.unit) {
+      errors.push(
+        `${relPath}: el archivo debería llamarse "${unitFile.unit}.json" (id de la unidad)`,
+      );
+    }
+    lessonCount += unitFile.lessons.length;
+    questionCount += unitFile.lessons.reduce((s, l) => s + l.questions.length, 0);
+    for (const lesson of unitFile.lessons) {
+      const owner = seenLessonIds.get(lesson.id);
+      if (owner) {
+        errors.push(
+          `${relPath}: id de lección "${lesson.id}" repetido (ya está en ${owner})`,
+        );
+      }
+      seenLessonIds.set(lesson.id, relPath);
+    }
   }
+  if (lessonCount === 0) {
+    errors.push(`${dir}/: el mundo no tiene lecciones (ningún archivo de unidad válido)`);
+  }
+  parsedWorlds.push({ dir, meta, lessonCount });
+}
+
+// Cross-world checks: stable ids/orders across the whole content set.
+const seenWorldIds = new Map<string, string>();
+const seenOrders = new Map<number, string>();
+for (const { dir, meta } of parsedWorlds) {
+  const idOwner = seenWorldIds.get(meta.id);
+  if (idOwner) {
+    errors.push(`${dir}/: id de mundo "${meta.id}" repetido (ya está en ${idOwner}/)`);
+  }
+  seenWorldIds.set(meta.id, dir);
+  const orderOwner = seenOrders.get(meta.order);
+  if (orderOwner) {
+    errors.push(`${dir}/: order ${meta.order} repetido (ya está en ${orderOwner}/)`);
+  }
+  seenOrders.set(meta.order, dir);
 }
 
 if (errors.length > 0) {
@@ -262,12 +331,7 @@ if (errors.length > 0) {
   process.exit(1);
 }
 
-const lessonCount = worlds.reduce((sum, w) => sum + w.world.lessons.length, 0);
-const questionCount = worlds.reduce(
-  (sum, w) =>
-    sum + w.world.lessons.reduce((s, l) => s + l.questions.length, 0),
-  0,
-);
+const totalLessons = parsedWorlds.reduce((s, w) => s + w.lessonCount, 0);
 console.log(
-  `✓ Contenido válido: ${worlds.length} mundo(s), ${lessonCount} lección(es), ${questionCount} pregunta(s).`,
+  `✓ Contenido válido: ${parsedWorlds.length} mundo(s), ${unitFileCount} archivo(s) de unidad, ${totalLessons} lección(es), ${questionCount} pregunta(s).`,
 );
