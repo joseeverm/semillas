@@ -9,9 +9,9 @@ export default function FillBlankQuestion({
   checked,
   onResult,
 }: QuestionProps<FillBlankQuestionData>) {
-  const segments = question.text.split("___");
+  const segments = question.statement.split("{blank}");
   const blankCount = segments.length - 1;
-  const bank = useMemo(() => shuffle(question.wordBank), [question.wordBank]);
+  const bank = useMemo(() => shuffle(question.options), [question.options]);
   // Each gap holds an index into `bank` (not the word itself) so duplicate
   // words in the bank are tracked independently.
   const [placed, setPlaced] = useState<(number | null)[]>(() =>
@@ -24,7 +24,7 @@ export default function FillBlankQuestion({
       return;
     }
     const correct = next.every(
-      (slot, i) => bank[slot as number] === question.answers[i],
+      (slot, i) => bank[slot as number] === question.answer[i],
     );
     onResult(correct);
   }
@@ -62,7 +62,7 @@ export default function FillBlankQuestion({
                   placed[i] === null
                     ? "border-dashed border-green-300 bg-green-50 text-transparent dark:border-green-800 dark:bg-green-900/40"
                     : checked
-                      ? bank[placed[i] as number] === question.answers[i]
+                      ? bank[placed[i] as number] === question.answer[i]
                         ? optionStyles.correct
                         : optionStyles.wrong
                       : `active:scale-95 ${optionStyles.selected}`

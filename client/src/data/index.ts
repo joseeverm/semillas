@@ -1,12 +1,16 @@
-import type { Content, Lesson, World } from "../types/content";
-import contentJson from "./content.json";
+import type { Lesson, World } from "../types/content";
 
-// JSON imports widen literals (e.g. `type: string`), so cast through unknown.
-const content = contentJson as unknown as Content;
+// One JSON file per world in ./worlds; every file found is part of the app
+// content, so adding a world is just dropping its JSON there. JSON imports
+// widen literals (e.g. `type: string`), so cast through unknown.
+const worldModules = import.meta.glob("./worlds/*.json", {
+  eager: true,
+  import: "default",
+});
 
-export const worlds: World[] = [...content.worlds].sort(
-  (a, b) => a.order - b.order,
-);
+export const worlds: World[] = (
+  Object.values(worldModules) as unknown as World[]
+).sort((a, b) => a.order - b.order);
 
 export function findWorld(worldId: string): World | undefined {
   return worlds.find((w) => w.id === worldId);

@@ -39,7 +39,9 @@ function LessonRunner({ worldId, lesson }: { worldId: string; lesson: Lesson }) 
   const [checked, setChecked] = useState(false);
   const [answerCorrect, setAnswerCorrect] = useState<boolean | null>(null);
   const [passedCount, setPassedCount] = useState(0);
-  const [failedIds, setFailedIds] = useState<ReadonlySet<string>>(new Set());
+  // Questions have no id in the content schema; the re-queue reuses the same
+  // object, so object identity dedupes a question failed more than once.
+  const [failed, setFailed] = useState<ReadonlySet<Question>>(new Set());
   const [finished, setFinished] = useState(false);
   // Set at finish time, before completeLesson flips isLessonCompleted.
   const [earnedXp, setEarnedXp] = useState(0);
@@ -51,7 +53,7 @@ function LessonRunner({ worldId, lesson }: { worldId: string; lesson: Lesson }) 
     if (answerCorrect === null) return;
     setChecked(true);
     if (!answerCorrect) {
-      setFailedIds((prev) => new Set(prev).add(question.id));
+      setFailed((prev) => new Set(prev).add(question));
     }
   }
 
@@ -73,7 +75,7 @@ function LessonRunner({ worldId, lesson }: { worldId: string; lesson: Lesson }) 
   }
 
   if (finished) {
-    const firstTryCorrect = totalQuestions - failedIds.size;
+    const firstTryCorrect = totalQuestions - failed.size;
     return (
       <div className="mx-auto flex min-h-dvh max-w-md flex-col items-center justify-center gap-6 px-8 text-center">
         <Confetti
@@ -159,8 +161,10 @@ function LessonRunner({ worldId, lesson }: { worldId: string; lesson: Lesson }) 
       {/* key remounts the question (fresh state + slide-in) on every advance,
           including when a failed question comes back around. */}
       <main key={index} className="animate-slide-in flex-1 overflow-y-auto px-5 py-4">
+        {/* fill_blank statements carry the `{blank}` gaps and are rendered
+            by the question component itself, so show an instruction instead. */}
         <h2 className="mb-6 text-xl font-bold text-green-950 dark:text-green-50">
-          {question.prompt}
+          {question.type === "fill_blank" ? "Completa la frase" : question.statement}
         </h2>
         <QuestionRenderer
           question={question}

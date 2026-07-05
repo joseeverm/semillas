@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import type { MultipleChoiceQuestion as MultipleChoiceQuestionData } from "../../types/content";
 import type { QuestionProps } from "./QuestionProps";
+import { shuffle } from "../../lib/shuffle";
 import { optionStyles } from "./optionStyles";
 
 export default function MultipleChoiceQuestion({
@@ -8,6 +9,12 @@ export default function MultipleChoiceQuestion({
   checked,
   onResult,
 }: QuestionProps<MultipleChoiceQuestionData>) {
+  // The content follows an answer-first convention (`answer` is usually 0),
+  // so options are shuffled for display. `selected` holds a content index.
+  const order = useMemo(
+    () => shuffle(question.options.map((_, i) => i)),
+    [question.options],
+  );
   const [selected, setSelected] = useState<number | null>(null);
 
   function handleSelect(index: number) {
@@ -18,7 +25,7 @@ export default function MultipleChoiceQuestion({
 
   return (
     <div className="flex flex-col gap-3">
-      {question.options.map((option, index) => {
+      {order.map((index) => {
         const isSelected = selected === index;
         let style = `active:scale-[0.98] ${optionStyles.idle}`;
         if (checked && index === question.answer) {
@@ -36,7 +43,7 @@ export default function MultipleChoiceQuestion({
             disabled={checked}
             className={`min-h-14 rounded-2xl border-2 px-4 py-3 text-left text-base font-medium shadow-sm transition-all duration-150 ${style}`}
           >
-            {option}
+            {question.options[index]}
           </button>
         );
       })}

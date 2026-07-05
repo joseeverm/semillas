@@ -14,20 +14,30 @@ export type QuestionType =
   | "matching"
   | "ordering";
 
-interface QuestionBase {
-  id: string;
-  type: QuestionType;
-  /** The prompt the camper reads. User-facing: Spanish. */
-  prompt: string;
-  /** Shown in the feedback panel, on both correct and incorrect answers. */
-  explanation: string;
+/**
+ * Editorial provenance against the official booklets. The app never uses or
+ * renders it; it exists so content editors can trace every question.
+ */
+export interface QuestionSource {
+  booklet: string;
+  page: number;
+  topic: string;
 }
 
-/** Multiple choice: tap the correct option. */
+interface QuestionBase {
+  type: QuestionType;
+  /** The statement the camper reads. User-facing: Spanish. */
+  statement: string;
+  /** Shown in the feedback panel, on both correct and incorrect answers. */
+  explanation: string;
+  source: QuestionSource;
+}
+
+/** Multiple choice: tap the correct option. Options are shuffled for display. */
 export interface MultipleChoiceQuestion extends QuestionBase {
   type: "multiple_choice";
   options: string[];
-  /** Index of the correct option within `options`. */
+  /** Index of the correct option within `options` (content order, not display order). */
   answer: number;
 }
 
@@ -37,15 +47,13 @@ export interface TrueFalseQuestion extends QuestionBase {
   answer: boolean;
 }
 
-/** Fill in the blanks: sentence with `___` gaps + word bank filled by tap. */
+/** Fill in the blanks: statement with `{blank}` gaps + word bank filled by tap. */
 export interface FillBlankQuestion extends QuestionBase {
   type: "fill_blank";
-  /** Sentence with `___` marking each gap, in order. */
-  text: string;
-  /** Correct words, one per gap, same order as the gaps. */
-  answers: string[];
-  /** Full word bank (answers + distractors). */
-  wordBank: string[];
+  /** Full word bank (answers + distractors), shuffled for display. */
+  options: string[];
+  /** Correct words, one per `{blank}` in `statement`, same order as the gaps. */
+  answer: string[];
 }
 
 /** Matching: two columns, tap one item on each side to form pairs. */
@@ -75,14 +83,11 @@ export interface Lesson {
   questions: Question[];
 }
 
+/** One world per program level, stored as one JSON file in `src/data/worlds/`. */
 export interface World {
   id: string;
   title: string;
   description: string;
   order: number;
   lessons: Lesson[];
-}
-
-export interface Content {
-  worlds: World[];
 }

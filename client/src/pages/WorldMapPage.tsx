@@ -22,17 +22,18 @@ import ProgressIcon from "../components/ProgressIcon";
 /**
  * Growth stages of the path, one per program level in order:
  * Aspirante, Semilla, Raíz, Tallo, Hoja, Flor, Fruto.
- * Real worlds (content.json) consume this list from the start; the
+ * Real worlds (src/data/worlds/) consume this list from the start; the
  * upcoming-level placeholders below consume the rest.
  */
 const LEVEL_ICONS: Icon[] = [Acorn, Plant, Carrot, Grains, Leaf, Flower, Orange];
 
 /**
  * Levels without content yet, shown as non-interactive preview cards at the
- * end of the path. When a level gets real content, add its world to
- * content.json and remove it from here.
+ * end of the path. When a level gets real content, add its JSON to
+ * src/data/worlds/ and remove it from here.
  */
 const UPCOMING_LEVELS: { title: string; description: string }[] = [
+  { title: "Semilla", description: "Germinar como campista: los primeros conocimientos propios." },
   { title: "Raíz", description: "Firmeza y arraigo: afianza lo aprendido." },
   { title: "Tallo", description: "Sostén del grupo: técnicas para sostener a otros." },
   { title: "Hoja", description: "Crecer hacia la luz: liderazgo en la vida de campamento." },

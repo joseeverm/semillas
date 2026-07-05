@@ -1,0 +1,100 @@
+{
+  "id": "aspirante",
+  "title": "Aspirante a Campista",
+  "description": "Los fundamentos del programa: historia, mística y símbolos",
+  "order": 1,
+  "lessons": [
+    {
+      "id": "aspirante-simbolos-01",
+      "title": "Escudo, bandera, himno, carné y uniforme",
+      "xp": 20,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "statement": "¿Qué forma tiene el escudo de Campamentos Juveniles?",
+          "options": [
+            "Un pentágono irregular formado por una C y una J",
+            "Un triángulo con los colores de la bandera de Colombia",
+            "Un círculo con una carpa en el centro",
+            "Un rombo formado por una C y una J"
+          ],
+          "answer": 0,
+          "explanation": "El escudo es un pentágono irregular que forman una C y una J, iniciales de Campamentos Juveniles, y juntas semejan una carpa.",
+          "source": { "booklet": "crecimiento-personal", "page": 20, "topic": "simbolos" }
+        },
+        {
+          "type": "matching",
+          "statement": "Empareja cada color del escudo con su significado",
+          "pairs": [
+            { "left": "Rojo", "right": "Vida, energía y amor: el color de la juventud" },
+            { "left": "Blanco", "right": "Rectitud en el comportamiento" },
+            { "left": "Azul", "right": "Amplitud en el horizonte, aspiraciones y conservación de costumbres" }
+          ],
+          "explanation": "Los tres colores del escudo tienen significado propio: el rojo representa a la juventud, el blanco la rectitud y el azul la amplitud del horizonte.",
+          "source": { "booklet": "crecimiento-personal", "page": 20, "topic": "simbolos" }
+        },
+        {
+          "type": "true_false",
+          "statement": "La bandera de Campamentos Juveniles es un rectángulo de color azul con el escudo en el centro.",
+          "answer": false,
+          "explanation": "La bandera es un rectángulo de color BLANCO con el escudo de Campamentos Juveniles en el centro.",
+          "source": { "booklet": "crecimiento-personal", "page": 20, "topic": "simbolos" }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "Las letras que forman el escudo semejan un objeto muy campamentil. ¿Cuál?",
+          "options": [
+            "Una carpa",
+            "Una fogata",
+            "Una montaña",
+            "Una brújula"
+          ],
+          "answer": 0,
+          "explanation": "La C y la J unidas semejan una carpa, el símbolo por excelencia de la vida campamentil.",
+          "source": { "booklet": "crecimiento-personal", "page": 20, "topic": "simbolos" }
+        },
+        {
+          "type": "fill_blank",
+          "statement": "El carné es {blank} e {blank} y acredita a su portador como Campista del programa.",
+          "options": ["personal", "intransferible", "público", "temporal"],
+          "answer": ["personal", "intransferible"],
+          "explanation": "El carné es personal e intransferible: solo acredita a quien lo porta, nadie más puede usarlo.",
+          "source": { "booklet": "crecimiento-personal", "page": 22, "topic": "simbolos" }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "¿Quién compuso el himno de Campamentos Juveniles?",
+          "options": [
+            "Avis Enoth Gil Barros, campista del Cesar",
+            "Miguel Forero Nougués, director de Coldeportes",
+            "Ruth María Mojica, fundadora del programa",
+            "Un grupo de campistas de Antioquia"
+          ],
+          "answer": 0,
+          "explanation": "El himno fue compuesto por Avis Enoth Gil Barros, campista del Departamento del Cesar, y se presentó junto con los símbolos en el Primer Campamento Nacional (Neiva, 1980).",
+          "source": { "booklet": "crecimiento-personal", "page": 15, "topic": "simbolos" }
+        },
+        {
+          "type": "true_false",
+          "statement": "El uniforme lleva en el cuello y los puños dos franjas: una azul y una roja.",
+          "answer": true,
+          "explanation": "La camiseta tipo polo lleva dos franjas, una azul y una roja, en cuello y puños, con el escudo en la parte superior izquierda.",
+          "source": { "booklet": "crecimiento-personal", "page": 23, "topic": "simbolos" }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "Según la cartilla, ¿cómo se completa el uniforme del campista además de la camiseta polo?",
+          "options": [
+            "Jean azul clásico y zapatos oscuros",
+            "Pantalón blanco y botas de montaña",
+            "Sudadera azul y tenis blancos",
+            "Jean negro y zapatos deportivos de cualquier color"
+          ],
+          "answer": 0,
+          "explanation": "El uniforme se completa con jean azul clásico y zapatos oscuros.",
+          "source": { "booklet": "crecimiento-personal", "page": 23, "topic": "simbolos" }
+        }
+      ]
+    }
+  ]
+}
