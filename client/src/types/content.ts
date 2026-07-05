@@ -65,8 +65,10 @@ export interface MatchingQuestion extends QuestionBase {
 /** Ordering: tap items in order, they get numbered (no drag and drop). */
 export interface OrderingQuestion extends QuestionBase {
   type: "ordering";
-  /** Items in the correct order; displayed shuffled. */
+  /** The items to order; their order here is irrelevant (displayed shuffled). */
   items: string[];
+  /** The items in the correct order; must be a permutation of `items`. */
+  answer: string[];
 }
 
 export type Question =

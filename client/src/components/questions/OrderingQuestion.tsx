@@ -9,9 +9,10 @@ export default function OrderingQuestion({
   checked,
   onResult,
 }: QuestionProps<OrderingQuestionData>) {
+  // Shuffle the answer (same items) so the display never starts pre-solved.
   const displayed = useMemo(
-    () => shuffleAvoidingOriginal(question.items),
-    [question.items],
+    () => shuffleAvoidingOriginal(question.answer),
+    [question.answer],
   );
   // Indices into `displayed`, in the order the user tapped them.
   const [sequence, setSequence] = useState<number[]>([]);
@@ -21,7 +22,7 @@ export default function OrderingQuestion({
       onResult(null);
       return;
     }
-    const correct = next.every((di, pos) => displayed[di] === question.items[pos]);
+    const correct = next.every((di, pos) => displayed[di] === question.answer[pos]);
     onResult(correct);
   }
 
@@ -45,7 +46,7 @@ export default function OrderingQuestion({
         let style = `active:scale-[0.98] ${optionStyles.idle}`;
         if (checked && numbered) {
           style =
-            displayed[index] === question.items[position]
+            displayed[index] === question.answer[position]
               ? optionStyles.correct
               : optionStyles.wrong;
         } else if (numbered) {

@@ -124,8 +124,19 @@ const orderingSchema = z
     type: z.literal("ordering"),
     ...questionBase,
     items: z.array(nonEmpty).min(2, "se necesitan al menos 2 elementos"),
+    answer: z.array(nonEmpty).min(2, "se necesitan al menos 2 elementos"),
   })
-  .superRefine((q, ctx) => reportDuplicates(q.items, "items", ctx));
+  .superRefine((q, ctx) => {
+    reportDuplicates(q.items, "items", ctx);
+    const sorted = (values: string[]) => JSON.stringify([...values].sort());
+    if (sorted(q.answer) !== sorted(q.items)) {
+      ctx.addIssue({
+        code: "custom",
+        path: ["answer"],
+        message: "answer debe tener exactamente los mismos elementos que items (en el orden correcto)",
+      });
+    }
+  });
 
 const questionSchema = z.discriminatedUnion("type", [
   multipleChoiceSchema,
