@@ -1,0 +1,598 @@
+{
+  "unit": "tecnicas",
+  "lessons": [
+    {
+      "id": "aspirante-tec-formaciones-01",
+      "title": "Formaciones, voces de mando y posiciones",
+      "xp": 20,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "statement": "¿Para qué sirven las formaciones en un campamento?",
+          "options": [
+            "Para organizar los grupos de forma ordenada en actividades como izadas de bandera, desfiles o capacitaciones",
+            "Para castigar a los campistas indisciplinados",
+            "Para competir entre semillas por la mejor figura",
+            "Solo para las ceremonias de inauguración"
+          ],
+          "answer": 0,
+          "explanation": "Las formaciones son los métodos de organizar los grupos durante las actividades (formaciones generales, izadas de bandera, desfiles, capacitaciones), para que todos los campistas puedan ver, oír o practicar cualquier actividad de forma ordenada.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 20,
+            "topic": "formaciones"
+          }
+        },
+        {
+          "type": "true_false",
+          "statement": "La formación general también recibe el nombre de formación en bosque.",
+          "answer": true,
+          "explanation": "Entre las formaciones más usadas está la 'general o bosque'. En la cartilla de Crecimiento Personal la misma formación aparece como 'general o por semillas': ambos nombres conviven en el programa.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 20,
+            "topic": "formaciones"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "Cuando el líder da la voz '¡Atención…!', ¿qué tipo de voz de mando está usando?",
+          "options": [
+            "La voz preventiva: avisa a los campistas sobre la tarea que van a realizar",
+            "La voz ejecutiva: ordena ejecutar la acción de inmediato",
+            "La voz de descanso: permite relajar la posición",
+            "La voz de reunión: convoca a formar"
+          ],
+          "answer": 0,
+          "explanation": "La voz preventiva ('Atención…') previene a los campistas sobre la tarea que deben realizar y los deja listos. Después viene la ejecutiva ('Fir…'), que indica ejecutar la acción.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 20,
+            "topic": "formaciones"
+          }
+        },
+        {
+          "type": "true_false",
+          "statement": "La voz ejecutiva se da antes que la voz preventiva.",
+          "answer": false,
+          "explanation": "Es al revés: primero la preventiva ('Atención…'), que avisa y prepara, y después la ejecutiva ('Fir…'), con la que los campistas ejecutan el movimiento.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 20,
+            "topic": "formaciones"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "statement": "Al conformar los bosques se podrán organizar {blank} hileras por {blank} campistas de fondo.",
+          "options": [
+            "5",
+            "8",
+            "3",
+            "10"
+          ],
+          "answer": [
+            "5",
+            "8"
+          ],
+          "explanation": "Los bosques se organizan en 5 hileras por 8 campistas de fondo, ubicados por orden de estatura, y el bosque se ubica a 3 pasos del líder que los llame a formar.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 20,
+            "topic": "formaciones"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "¿En qué orden se ubican los campistas al conformar un bosque?",
+          "options": [
+            "Por estatura, de menor a mayor",
+            "Por estatura, de mayor a menor",
+            "Por orden alfabético",
+            "Por antigüedad en el programa"
+          ],
+          "answer": 0,
+          "explanation": "Los campistas se ubican por orden de estatura, de menor a mayor, y podrán ir intercalados hombres y mujeres o separados.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 20,
+            "topic": "formaciones"
+          }
+        },
+        {
+          "type": "matching",
+          "statement": "Empareja cada posición fundamental con su descripción",
+          "pairs": [
+            {
+              "left": "Posición de descanso",
+              "right": "Pies separados unos 20 cm, manos atrás a la altura de la cintura"
+            },
+            {
+              "left": "Posición firme",
+              "right": "Talones juntos formando una V, manos abiertas a los lados sobre las costuras"
+            },
+            {
+              "left": "Posición himno campamentos",
+              "right": "Mano izquierda abierta sobre el costado izquierdo del pecho, derecha empuñada en la espalda"
+            }
+          ],
+          "explanation": "Las tres posiciones fundamentales: descanso (para recibir información), firme (atención, ceremonias e himnos) y la posición especial para el himno de campamentos.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 21,
+            "topic": "formaciones"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "¿Qué posición permite recibir mejor la información?",
+          "options": [
+            "La posición de descanso",
+            "La posición firme",
+            "La posición himno campamentos",
+            "La formación en círculo"
+          ],
+          "answer": 0,
+          "explanation": "La posición de descanso (cuerpo apoyado en ambos pies, manos atrás, la izquierda tomando la derecha por la muñeca) es la que permite recibir mejor la información.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 21,
+            "topic": "formaciones"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "En la formación en círculo, ¿cuándo se detienen los campistas?",
+          "options": [
+            "Cuando el líder baja la mano, quedando todos mirando hacia el centro",
+            "Cuando el líder da un pitazo corto",
+            "Cuando completan tres vueltas alrededor del líder",
+            "Cuando el primer campista llega a su puesto"
+          ],
+          "answer": 0,
+          "explanation": "Los campistas giran en dirección a la señal de la mano del líder y se detienen cuando él baja la mano, quedando todos mirando hacia el centro.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 22,
+            "topic": "formaciones"
+          }
+        }
+      ]
+    },
+    {
+      "id": "aspirante-tec-senales-01",
+      "title": "Señales de pista y de pito",
+      "xp": 20,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "statement": "¿Qué son las señales de pista?",
+          "options": [
+            "Un lenguaje secreto que deja indicaciones precisas a quienes vienen siguiendo el camino",
+            "Marcas oficiales que delimitan el terreno del campamento",
+            "Señales de tránsito adaptadas para caminatas",
+            "Dibujos decorativos que identifican a cada semilla"
+          ],
+          "answer": 0,
+          "explanation": "Las pistas son señales convencionales que equivalen a un lenguaje secreto: permiten dejar a los que siguen indicaciones precisas para llegar al sitio determinado o descubrir lo deseado.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 23,
+            "topic": "senales"
+          }
+        },
+        {
+          "type": "true_false",
+          "statement": "Las señales de pista deben colocarse siempre al lado derecho del camino y evitando que sean muy llamativas.",
+          "answer": true,
+          "explanation": "Van siempre al lado derecho del camino, y discretas para que otras personas no las quiten o las dañen.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 24,
+            "topic": "senales"
+          }
+        },
+        {
+          "type": "true_false",
+          "statement": "Para marcar una pista en un árbol, lo correcto es hacer una incisión sobre la corteza.",
+          "answer": false,
+          "explanation": "Nunca: si deseas marcar en un árbol debes evitar hacer incisiones sobre él o destruir plantas vivas. Las señales se pueden trazar sobre la tierra con ramas o piedras.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 24,
+            "topic": "senales"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "En las señales de pito, ¿qué representan un sonido largo y uno corto?",
+          "options": [
+            "El largo una raya y el corto un punto",
+            "El largo un punto y el corto una raya",
+            "El largo una orden y el corto una pregunta",
+            "El largo al líder y el corto a los campistas"
+          ],
+          "answer": 0,
+          "explanation": "Como en el código de puntos y rayas: un sonido largo sin interrupción representa una raya, y uno corto y seco representa un punto.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 24,
+            "topic": "senales"
+          }
+        },
+        {
+          "type": "matching",
+          "statement": "Empareja cada señal de pito con su significado",
+          "pairs": [
+            {
+              "left": "1 pito largo",
+              "right": "Atención, silencio"
+            },
+            {
+              "left": "1 pito corto y 1 largo",
+              "right": "Alto"
+            },
+            {
+              "left": "3 pitos cortos y 1 largo",
+              "right": "Reunión general"
+            }
+          ],
+          "explanation": "Atención/silencio es un pito largo; alto es un corto y un largo; y la reunión general son tres cortos y uno largo.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 24,
+            "topic": "senales"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "¿Cuál es la señal de pito para el SOS?",
+          "options": [
+            "3 pitos cortos y 3 largos",
+            "3 pitos largos y 1 corto",
+            "5 pitos cortos seguidos",
+            "1 pito largo repetido tres veces"
+          ],
+          "answer": 0,
+          "explanation": "El SOS son 3 pitos cortos y 3 largos. Es la señal de emergencia y todo campista debe reconocerla.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 24,
+            "topic": "senales"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "¿Cuál es la señal de pito para la reunión por bosques?",
+          "options": [
+            "1 pito corto, 1 largo y 2 cortos",
+            "3 pitos cortos y 1 largo",
+            "2 pitos largos y 1 corto",
+            "1 pito largo"
+          ],
+          "answer": 0,
+          "explanation": "La reunión por bosques se señala con 1 pito corto, 1 largo y 2 cortos. No la confundas con la reunión general, que son 3 cortos y 1 largo.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 24,
+            "topic": "senales"
+          }
+        },
+        {
+          "type": "true_false",
+          "statement": "El silbato o pito es una herramienta importante cuando se tienen grupos y dar una información verbal no es fácil.",
+          "answer": true,
+          "explanation": "Ese es justamente el valor del pito: comunicar con sonidos codificados cuando la voz no alcanza para todo el grupo.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 24,
+            "topic": "senales"
+          }
+        }
+      ]
+    },
+    {
+      "id": "aspirante-tec-cabuyeria-01",
+      "title": "Cabuyería: el lenguaje de las cuerdas",
+      "xp": 20,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "statement": "¿De dónde proviene la palabra 'cabuyería'?",
+          "options": [
+            "De 'cabuya', palabra de origen caribeño que nombra un tipo de pita de esas regiones",
+            "De 'cabo', el término marinero para las cuerdas",
+            "Del apellido del marinero que sistematizó los nudos",
+            "De 'cabaña', porque los nudos se usaban para construirlas"
+          ],
+          "answer": 0,
+          "explanation": "Cabuyería viene de 'cabuya', palabra de origen caribeño: un tipo de pita que se encuentra en estas regiones. Es el arte de hacer nudos, conocer sus clases y sus distintas funciones.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 24,
+            "topic": "cabuyeria"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "En cabuyería, ¿qué es un 'cabo'?",
+          "options": [
+            "El nombre que se le da en una embarcación a una cuerda sin una función específica",
+            "El extremo de cualquier cuerda",
+            "La cuerda más gruesa del campamento",
+            "El nudo que remata una cuerda"
+          ],
+          "answer": 0,
+          "explanation": "Cabo es el nombre que recibe en una embarcación una cuerda sin función específica. Gran parte de la terminología de la cabuyería viene del mundo marinero.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 25,
+            "topic": "cabuyeria"
+          }
+        },
+        {
+          "type": "true_false",
+          "statement": "Un cabo siempre tiene dos chicotes.",
+          "answer": true,
+          "explanation": "El chicote es el extremo de un cabo, y como toda cuerda tiene dos extremos, un cabo siempre tiene dos chicotes.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 25,
+            "topic": "cabuyeria"
+          }
+        },
+        {
+          "type": "matching",
+          "statement": "Empareja cada parte de la cuerda con su definición",
+          "pairs": [
+            {
+              "left": "Chicote",
+              "right": "El extremo de un cabo"
+            },
+            {
+              "left": "Firme",
+              "right": "La parte larga y principal que queda bajo tensión"
+            },
+            {
+              "left": "Mena",
+              "right": "El grosor: la longitud de la circunferencia del cabo"
+            }
+          ],
+          "explanation": "Chicote (extremo), firme (parte principal bajo tensión) y mena (grosor) son términos que aparecen una y otra vez en las instrucciones de los nudos: sin ellos no se pueden seguir.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 25,
+            "topic": "cabuyeria"
+          }
+        },
+        {
+          "type": "matching",
+          "statement": "Empareja cada forma de la cuerda con su nombre",
+          "pairs": [
+            {
+              "left": "Seno",
+              "right": "Un arco en la cuerda"
+            },
+            {
+              "left": "Gaza o presilla",
+              "right": "Cuando la cuerda se cruza"
+            },
+            {
+              "left": "Vuelta alrededor",
+              "right": "El chicote da vuelta y media alrededor de un objeto y termina paralelo a su firme"
+            }
+          ],
+          "explanation": "Seno (arco), gaza o presilla (cruce) y vuelta alrededor son las formas básicas con las que se describen los pasos de todos los nudos.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 25,
+            "topic": "cabuyeria"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "¿Qué significa 'azocar'?",
+          "options": [
+            "Apretar o ajustar bien un nudo",
+            "Soltar poco a poco un cabo",
+            "Recoger un cabo en vueltas para que no se enrede",
+            "Tirar con fuerza de un cabo"
+          ],
+          "answer": 0,
+          "explanation": "Azocar es apretar o ajustar bien un nudo. Lo verás constantemente en las instrucciones: casi todos los amarres terminan azocando.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 25,
+            "topic": "cabuyeria"
+          }
+        },
+        {
+          "type": "matching",
+          "statement": "Empareja cada acción con su significado",
+          "pairs": [
+            {
+              "left": "Izar",
+              "right": "Subir algo, como una vela o una bandera"
+            },
+            {
+              "left": "Arriar",
+              "right": "Bajar lo que está izado"
+            },
+            {
+              "left": "Templar",
+              "right": "Estirar un cabo o darle tensión"
+            }
+          ],
+          "explanation": "Izar y arriar son opuestos (subir y bajar la bandera, por ejemplo), y templar es dar tensión: lo que haces con los vientos de la carpa.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 25,
+            "topic": "cabuyeria"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "¿Qué término se usa cuando tiramos con fuerza de un cabo?",
+          "options": [
+            "Halar",
+            "Lascar",
+            "Largar",
+            "Amollar"
+          ],
+          "answer": 0,
+          "explanation": "Halar es tirar con fuerza de un cabo. Los otros son casi lo contrario: lascar es soltar poco a poco manteniendo tensión, largar es soltar con rapidez y amollar es aflojar gradualmente.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 25,
+            "topic": "cabuyeria"
+          }
+        }
+      ]
+    },
+    {
+      "id": "aspirante-tec-nudos-teoria-01",
+      "title": "Nudos: qué son y cómo se clasifican",
+      "xp": 20,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "statement": "¿Qué es un nudo?",
+          "options": [
+            "Un entrelazamiento de los extremos de una cuerda que, cuanto más se estira, más apretado queda",
+            "Cualquier enredo accidental en una cuerda",
+            "Una figura decorativa hecha con cuerda",
+            "La unión permanente de dos cuerdas con pegamento"
+          ],
+          "answer": 0,
+          "explanation": "Un nudo es el entrelazamiento de los extremos de un hilo, cuerda o cosa alargada y flexible, que cuanto más se estira por uno o ambos extremos, más apretado queda.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 26,
+            "topic": "nudos-teoria"
+          }
+        },
+        {
+          "type": "true_false",
+          "statement": "Si un campista no tiene habilidad para hacer nudos, lo peor que puede pasar es que se dañe la cuerda.",
+          "answer": false,
+          "explanation": "Es mucho más serio: quien entra en esta área sin habilidades en hacer nudos pone en peligro su vida y la de los demás. Por eso hacer nudos correctamente, sin pensar en cómo hacerlo, es una cualidad necesaria del campista.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 26,
+            "topic": "nudos-teoria"
+          }
+        },
+        {
+          "type": "matching",
+          "statement": "Dentro de lo que comúnmente llamamos 'nudo' hay categorías distintas. Empareja cada una con su definición",
+          "pairs": [
+            {
+              "left": "El nudo",
+              "right": "La unión de una cuerda con un chicote"
+            },
+            {
+              "left": "La vuelta",
+              "right": "La unión de una cuerda con otro elemento que, por lo general, está fijo"
+            },
+            {
+              "left": "El amarre",
+              "right": "La unión de dos elementos, fijos o móviles, formado por vueltas"
+            }
+          ],
+          "explanation": "Nudo, vuelta y amarre son cosas distintas: el nudo une cuerda con chicote, la vuelta une la cuerda a un elemento fijo, y el amarre une dos elementos entre sí.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 26,
+            "topic": "nudos-teoria"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "¿Cuál de las siguientes NO es una cualidad de un buen nudo?",
+          "options": [
+            "Que sea imposible de deshacer una vez hecho",
+            "Que sea fácil y rápido de hacer",
+            "Que se pueda determinar fácilmente si está bien hecho",
+            "Que no se corra (excepto que sea un nudo corredizo)"
+          ],
+          "answer": 0,
+          "explanation": "Es justo lo contrario: un buen nudo debe ser fácil de deshacer después de quitar la carga. Las cualidades son: fácil y rápido de hacer, fácil de deshacer, verificable, que mantenga su forma, resistente y útil para su fin, y que no se corra.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 26,
+            "topic": "nudos-teoria"
+          }
+        },
+        {
+          "type": "matching",
+          "statement": "Los nudos se agrupan según su función en tres grandes grupos. Empareja cada grupo con su uso",
+          "pairs": [
+            {
+              "left": "Nudos de unión",
+              "right": "Unir cuerdas de igual o diferente mena"
+            },
+            {
+              "left": "Nudos de sujeción",
+              "right": "Sujetar a un anclaje o a un elemento que requiera ser izado"
+            },
+            {
+              "left": "Nudos de acorte",
+              "right": "Acortar cuerdas muy extensas o dejar sin tensión una parte en mal estado"
+            }
+          ],
+          "explanation": "La clasificación funcional es la clave para elegir nudo: ¿vas a unir cuerdas, a sujetar algo, o a acortar? Cada nudo básico pertenece a uno de estos grupos.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 27,
+            "topic": "nudos-teoria"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "Los nudos de acorte tienen dos funciones. ¿Cuáles?",
+          "options": [
+            "Acortar cuerdas que quedaron muy extensas y dejar sin tensión una parte de la cuerda en mal estado",
+            "Unir cuerdas mojadas y cuerdas secas",
+            "Sujetar anclajes e izar elementos",
+            "Decorar remates y evitar deshilachados"
+          ],
+          "answer": 0,
+          "explanation": "Los nudos de acorte sirven para acortar cuerdas que han quedado muy extensas y para dejar sin tensión una parte de la cuerda que se encuentre mal (dañada).",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 27,
+            "topic": "nudos-teoria"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "Según la cartilla, ¿cuál es la forma correcta de aprender nudos?",
+          "options": [
+            "De un líder práctico, practicando cada nudo hasta hacerlo correctamente",
+            "Memorizando los dibujos de la cartilla",
+            "Viendo videos hasta entender la teoría",
+            "Practicando solo los nudos más difíciles"
+          ],
+          "answer": 0,
+          "explanation": "La cartilla lo dice claro: no aprender de dibujos sino de un líder práctico, practicar los usos reales de cada nudo, y practicar cada nudo hasta hacerlo correctamente. Esta app te ayuda a repasar la teoría, pero el nudo se aprende con cuerda en mano.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 27,
+            "topic": "nudos-teoria"
+          }
+        },
+        {
+          "type": "true_false",
+          "statement": "Al elegir el nudo para una tarea, se debe optar por el más resistente, pero también por el más fácil y rápido de realizar y por el que menos se azoque.",
+          "answer": true,
+          "explanation": "El criterio de elección combina resistencia, facilidad y rapidez, que no dé opción a confusión, y que se azoque poco, para que después de cumplir su función sea fácil y rápido de deshacer.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 26,
+            "topic": "nudos-teoria"
+          }
+        }
+      ]
+    }
+  ]
+}
