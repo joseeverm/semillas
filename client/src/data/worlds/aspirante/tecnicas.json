@@ -593,6 +593,723 @@
           }
         }
       ]
+    },
+    {
+      "id": "aspirante-tec-nudos-basicos-01",
+      "title": "Nudos básicos I: simple, ballestrinque, llano y leñador",
+      "xp": 20,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "statement": "¿Por qué el nudo simple es tan importante en la cabuyería?",
+          "options": [
+            "Porque es uno de los fundamentales y forma la base de muchos otros nudos",
+            "Porque es el más resistente de todos los nudos",
+            "Porque es el único que sirve para unir cuerdas",
+            "Porque es el nudo oficial de Campamentos Juveniles"
+          ],
+          "answer": 0,
+          "explanation": "El nudo simple es uno de los fundamentales y forma la base de muchos otros nudos. Se hace pasando el extremo de la cuerda alrededor de esta e introduciéndolo en la presilla que se forma. Se utiliza para sujetar.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 27,
+            "topic": "nudos-basicos"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "¿Para qué se utiliza el nudo ballestrinque?",
+          "options": [
+            "Para iniciar cualquier amarre",
+            "Para terminar cualquier amarre",
+            "Para unir dos cuerdas mojadas",
+            "Para acortar una cuerda muy larga"
+          ],
+          "answer": 0,
+          "explanation": "El ballestrinque se utiliza para iniciar cualquier amarre; es un nudo de sujeción. Lo verás una y otra vez: el amarre cuadrado, el redondo, el diagonal y el trípode comienzan todos con un ballestrinque.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 28,
+            "topic": "nudos-basicos"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "¿Cómo se realiza el ballestrinque?",
+          "options": [
+            "Con dos presillas una detrás de otra, donde la que está adelante esconde la que está atrás",
+            "Con dos senos enfrentados que se cruzan por el centro",
+            "Pasando el chicote tres veces alrededor del firme",
+            "Con un nudo simple sobre otro nudo simple"
+          ],
+          "answer": 0,
+          "explanation": "El ballestrinque se hace con dos presillas, una detrás de otra, donde la de adelante esconde la de atrás.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 28,
+            "topic": "nudos-basicos"
+          }
+        },
+        {
+          "type": "matching",
+          "statement": "Empareja cada nudo con su uso",
+          "pairs": [
+            {
+              "left": "Ballestrinque",
+              "right": "Iniciar cualquier amarre"
+            },
+            {
+              "left": "Llano o rizo",
+              "right": "Unir cuerdas de la misma mena y terminar amarres"
+            },
+            {
+              "left": "Leñador",
+              "right": "Atar o anclar a un elemento resistente"
+            }
+          ],
+          "explanation": "Ballestrinque para empezar amarres, llano para unir cuerdas iguales y rematar amarres, leñador para anclar a algo resistente. Fíjate en la pareja que forman: los amarres inician con ballestrinque y terminan con llano.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 28,
+            "topic": "nudos-basicos"
+          }
+        },
+        {
+          "type": "true_false",
+          "statement": "En el nudo llano o rizo, los dos chicotes deben salir paralelos al firme.",
+          "answer": true,
+          "explanation": "Esa es la clave del llano bien hecho: se toman los dos chicotes, uno pasa por encima del otro con una vuelta, se repite la vuelta, y los chicotes deben salir paralelos al firme.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 29,
+            "topic": "nudos-basicos"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "¿Cómo se realiza el nudo leñador?",
+          "options": [
+            "Presilla alrededor del elemento a sujetar, vuelta al firme con el chicote y varios cotes sobre la presilla",
+            "Dos presillas cruzadas sobre el elemento y un nudo simple de remate",
+            "Un seno alrededor del elemento ajustado con los dos chicotes",
+            "Una 'S' con la cuerda acotada con gazas en los extremos"
+          ],
+          "answer": 0,
+          "explanation": "El leñador: presilla alrededor del elemento que se va a sujetar, se le da vuelta al firme con el chicote y se hacen varios cotes sobre la presilla ya hecha. Es un nudo de sujeción.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 30,
+            "topic": "nudos-basicos"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "¿A qué grupo de la clasificación pertenece el nudo llano o rizo?",
+          "options": [
+            "Nudos de unión",
+            "Nudos de sujeción",
+            "Nudos de acorte",
+            "Nudos corredizos"
+          ],
+          "answer": 0,
+          "explanation": "El llano o rizo es un nudo de unión: une cuerdas de la misma mena. El ballestrinque y el leñador, en cambio, son de sujeción.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 29,
+            "topic": "nudos-basicos"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "statement": "El llano o rizo se utiliza para {blank} cuerdas de la misma {blank}.",
+          "options": [
+            "unir",
+            "mena",
+            "sujetar",
+            "gaza"
+          ],
+          "answer": [
+            "unir",
+            "mena"
+          ],
+          "explanation": "El llano une cuerdas de la misma mena (el mismo grosor). Para cuerdas de diferente mena existe otro nudo que verás en la próxima lección: el pescador.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 29,
+            "topic": "nudos-basicos"
+          }
+        }
+      ]
+    },
+    {
+      "id": "aspirante-tec-nudos-basicos-02",
+      "title": "Nudos básicos II: pescador, margarita, fugitivo y escota",
+      "xp": 20,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "statement": "¿Para qué se utiliza el nudo pescador?",
+          "options": [
+            "Para atar cuerdas de diferente mena o cuerdas mojadas",
+            "Para atar cuerdas del mismo grosor, siempre secas",
+            "Para anclar la cuerda a un árbol",
+            "Para recuperar la cuerda después de usarla"
+          ],
+          "answer": 0,
+          "explanation": "El pescador une cuerdas de diferente mena o cuerdas mojadas; es un nudo de unión. Se hace uniendo las dos cuerdas en paralelo, con los chicotes al lado contrario, y un nudo sencillo en cada extremo tomando la otra cuerda.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 31,
+            "topic": "nudos-basicos"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "La vuelta escota tiene una restricción importante. ¿Cuál?",
+          "options": [
+            "Debe usarse solamente con cuerdas secas",
+            "Debe usarse solamente con cuerdas del mismo color",
+            "Solo funciona con cuerdas muy gruesas",
+            "Solo puede hacerla un líder certificado"
+          ],
+          "answer": 0,
+          "explanation": "La vuelta escota ata cuerdas de la misma o diferente mena, pero debe usarse solamente con cuerdas secas. Para cuerdas mojadas, el nudo correcto es el pescador.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 34,
+            "topic": "nudos-basicos"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "Está lloviendo y necesitas unir dos cuerdas empapadas. ¿Qué nudo eliges?",
+          "options": [
+            "Pescador",
+            "Vuelta escota",
+            "Llano o rizo",
+            "Ballestrinque"
+          ],
+          "answer": 0,
+          "explanation": "El pescador es el nudo para cuerdas mojadas (o de diferente mena). La vuelta escota quedaría descartada porque solo debe usarse con cuerdas secas.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 31,
+            "topic": "nudos-basicos"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "¿Cuáles son los usos del nudo margarita?",
+          "options": [
+            "Acortar una cuerda, protegerla y evitar el desgarre",
+            "Unir dos cuerdas de diferente mena",
+            "Iniciar amarres sobre troncos gruesos",
+            "Izar banderas y velas"
+          ],
+          "answer": 0,
+          "explanation": "La margarita acorta una cuerda, la protege y evita el desgarre; es un nudo de acorte. Recuerda que los nudos de acorte también sirven para dejar sin tensión un tramo de cuerda en mal estado.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 32,
+            "topic": "nudos-basicos"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "¿Cómo se realiza el nudo margarita?",
+          "options": [
+            "Formando una 'S' con la cuerda y acotando con una presilla o gaza cada seno que se forma a los lados",
+            "Dividiendo la cuerda en dos partes iguales y haciendo senos alternados",
+            "Con dos presillas una detrás de otra sobre el firme",
+            "Dando vueltas alrededor de dos maderos paralelos"
+          ],
+          "answer": 0,
+          "explanation": "La margarita se hace formando una 'S' con la cuerda, y en cada uno de los senos que se forman a los lados se acota con una presilla o gaza.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 32,
+            "topic": "nudos-basicos"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "¿Para qué se utiliza el nudo fugitivo?",
+          "options": [
+            "Para recuperar la cuerda después de utilizarla",
+            "Para escapar de una situación de peligro",
+            "Para unir cuerdas que se van a usar mucho tiempo",
+            "Para colgar el maletero dentro de la carpa"
+          ],
+          "answer": 0,
+          "explanation": "El fugitivo se utiliza para recuperar la cuerda después de utilizarla: con una de las cuerdas firmes se hace la fuerza y con la otra se recupera la cuerda. Es un nudo de acorte.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 33,
+            "topic": "nudos-basicos"
+          }
+        },
+        {
+          "type": "matching",
+          "statement": "Empareja cada nudo con su uso característico",
+          "pairs": [
+            {
+              "left": "Pescador",
+              "right": "Atar cuerdas de diferente mena o mojadas"
+            },
+            {
+              "left": "Margarita",
+              "right": "Acortar la cuerda y protegerla del desgarre"
+            },
+            {
+              "left": "Fugitivo",
+              "right": "Recuperar la cuerda después de utilizarla"
+            }
+          ],
+          "explanation": "Cada nudo resuelve un problema distinto: el pescador une lo difícil (mojado, desigual), la margarita acorta y protege, y el fugitivo te devuelve la cuerda cuando terminas.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 31,
+            "topic": "nudos-basicos"
+          }
+        },
+        {
+          "type": "true_false",
+          "statement": "La vuelta escota se ajusta con los cuatro firmes de las dos cuerdas.",
+          "answer": true,
+          "explanation": "Se hace un seno en una cuerda, se introduce el chicote de la otra por el seno de abajo hacia arriba formando una presilla alrededor del seno, y el nudo se ajusta con los cuatro firmes de las dos cuerdas. Es un nudo de unión.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 34,
+            "topic": "nudos-basicos"
+          }
+        }
+      ]
+    },
+    {
+      "id": "aspirante-tec-amarres-01",
+      "title": "Amarres básicos",
+      "xp": 20,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "statement": "¿Cuál es la finalidad de un amarre?",
+          "options": [
+            "Unir dos objetos como troncos, guaduas o varas con una cuerda",
+            "Unir dos cuerdas de diferente mena",
+            "Decorar las construcciones del campamento",
+            "Sujetar la carpa al suelo"
+          ],
+          "answer": 0,
+          "explanation": "La finalidad de un amarre es unir dos objetos (troncos, guaduas, maderos, varas o palos) con un coordino o cuerda. Son la base de las construcciones de campamento.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 34,
+            "topic": "amarres"
+          }
+        },
+        {
+          "type": "true_false",
+          "statement": "Los amarres permiten evitar el uso de clavos o alambre, que son más peligrosos y más contaminantes.",
+          "answer": true,
+          "explanation": "Gracias a los amarres se evita el uso de clavos o alambre en las construcciones: son más peligrosos y más contaminantes. La cuerda, en cambio, se recupera y se reutiliza.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 35,
+            "topic": "amarres"
+          }
+        },
+        {
+          "type": "matching",
+          "statement": "Empareja cada amarre con su uso",
+          "pairs": [
+            {
+              "left": "Amarre cuadrado",
+              "right": "Atar troncos en ángulo recto"
+            },
+            {
+              "left": "Amarre redondo",
+              "right": "Atar dos maderos paralelos"
+            },
+            {
+              "left": "Amarre diagonal",
+              "right": "Atar troncos que se cruzan en forma de equis (x)"
+            }
+          ],
+          "explanation": "La geometría manda: ángulo recto → cuadrado, paralelos → redondo, cruzados en X sin ángulo recto → diagonal.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 35,
+            "topic": "amarres"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "¿Para qué se usa el amarre trípode?",
+          "options": [
+            "Para la construcción de bases o plataformas",
+            "Para atar la bandera al mástil",
+            "Para unir dos troncos en ángulo recto",
+            "Para reforzar el tabú del campamento"
+          ],
+          "answer": 0,
+          "explanation": "El trípode se usa para construir bases o plataformas: se colocan 2 troncos en una misma dirección y el tercero en el centro, en dirección contraria, y se entrelazan los tres.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 38,
+            "topic": "amarres"
+          }
+        },
+        {
+          "type": "true_false",
+          "statement": "Los cuatro amarres básicos (cuadrado, redondo, diagonal y trípode) inician con un nudo ballestrinque.",
+          "answer": true,
+          "explanation": "Todos comienzan con un ballestrinque: en el tronco vertical (cuadrado), sobre uno de los troncos (redondo), en uno de los palos por sus ángulos mayores (diagonal) o en el madero del centro (trípode). Por eso el ballestrinque es EL nudo para iniciar amarres.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 35,
+            "topic": "amarres"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "¿Con qué nudo se terminan los amarres cuadrado, redondo y diagonal?",
+          "options": [
+            "Con un llano o rizo, utilizando el chicote libre",
+            "Con otro ballestrinque de remate",
+            "Con un nudo pescador",
+            "Con un nudo fugitivo para recuperar la cuerda"
+          ],
+          "answer": 0,
+          "explanation": "Los tres se azocan y se terminan con un nudo llano o rizo utilizando el chicote libre. Ballestrinque para abrir, llano para cerrar: la fórmula de los amarres.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 35,
+            "topic": "amarres"
+          }
+        },
+        {
+          "type": "ordering",
+          "statement": "Ordena los pasos del amarre cuadrado",
+          "items": [
+            "Azocar el amarre",
+            "Hacer un ballestrinque en el tronco vertical dejando centímetros libres del chicote",
+            "Terminar con un llano o rizo usando el chicote libre",
+            "Pasar la cabuya por delante del tronco horizontal y por detrás del vertical"
+          ],
+          "answer": [
+            "Hacer un ballestrinque en el tronco vertical dejando centímetros libres del chicote",
+            "Pasar la cabuya por delante del tronco horizontal y por detrás del vertical",
+            "Azocar el amarre",
+            "Terminar con un llano o rizo usando el chicote libre"
+          ],
+          "explanation": "El amarre cuadrado: ballestrinque en el vertical, la cabuya teje por delante del horizontal y por detrás del vertical, se azoca, y se remata con llano o rizo.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 35,
+            "topic": "amarres"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "Vas a construir una mesa uniendo troncos que se cruzan en ángulo recto. ¿Qué amarre usas?",
+          "options": [
+            "Amarre cuadrado",
+            "Amarre diagonal",
+            "Amarre redondo",
+            "Amarre trípode"
+          ],
+          "answer": 0,
+          "explanation": "Troncos en ángulo recto piden amarre cuadrado. El diagonal sería para troncos cruzados en X sin ángulo recto, el redondo para paralelos y el trípode para bases o plataformas.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 35,
+            "topic": "amarres"
+          }
+        }
+      ]
+    },
+    {
+      "id": "aspirante-tec-carpa-01",
+      "title": "La carpa: armado y cuidados",
+      "xp": 20,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "statement": "¿Dónde NO se deben ubicar las carpas en la distribución del campamento?",
+          "options": [
+            "Cerca de la cocina, en orillas de quebradas, debajo de árboles o cerca de la fogata",
+            "En terreno plano y despejado",
+            "En un sitio sin piedras ni maleza",
+            "De manera organizada que facilite el acceso"
+          ],
+          "answer": 0,
+          "explanation": "Las carpas deben quedar retiradas del lugar donde se cocina, de las orillas de quebradas, de debajo de los árboles y de donde se prende la fogata. También hay que tener muy en cuenta la dirección del viento, especialmente el que baja de las montañas.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 41,
+            "topic": "carpa"
+          }
+        },
+        {
+          "type": "ordering",
+          "statement": "Ordena estos pasos del armado de la carpa",
+          "items": [
+            "Templar bien la carpa y la sobrecarpa",
+            "Desempacar la carpa y clasificar varillaje, estacas, sobrecarpa y carpa",
+            "Clavar las estacas de los cuatro extremos del piso, por parejas y en diagonal",
+            "Desenvolver la carpa ubicando la puerta en la posición donde va a quedar"
+          ],
+          "answer": [
+            "Desempacar la carpa y clasificar varillaje, estacas, sobrecarpa y carpa",
+            "Desenvolver la carpa ubicando la puerta en la posición donde va a quedar",
+            "Clavar las estacas de los cuatro extremos del piso, por parejas y en diagonal",
+            "Templar bien la carpa y la sobrecarpa"
+          ],
+          "explanation": "Primero se desempaca y clasifica, se desenvuelve ubicando la puerta (fijándose en cómo estaba empacada, que es la guía para guardarla), se clavan las estacas de los extremos, y hacia el final se templa la carpa y la sobrecarpa.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 41,
+            "topic": "carpa"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "statement": "Las estacas se deben anclar al piso con una inclinación de {blank} grados, en dirección {blank} al viento de la carpa.",
+          "options": [
+            "45",
+            "contraria",
+            "90",
+            "paralela"
+          ],
+          "answer": [
+            "45",
+            "contraria"
+          ],
+          "explanation": "Las estacas van a 45 grados y en dirección contraria al viento de la carpa: así la tensión del viento las clava más en vez de arrancarlas.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 42,
+            "topic": "carpa"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "¿Por qué no se debe consumir alimentos en el interior de la carpa?",
+          "options": [
+            "Porque los residuos de comida atraen animales rastreros",
+            "Porque las migas dañan el piso de la carpa",
+            "Porque está prohibido por el reglamento del campamento",
+            "Porque los olores impregnan la tela"
+          ],
+          "answer": 0,
+          "explanation": "Los residuos de comida atraen animales rastreros. La carpa es para descansar: los alimentos se consumen afuera.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 42,
+            "topic": "carpa"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "¿Qué pasa si guardas la carpa mojada?",
+          "options": [
+            "Se genera un hongo llamado 'mal de tierra' que pudre la carpa",
+            "Se oxidan las varillas",
+            "Se encoge la tela y ya no arma bien",
+            "No pasa nada si se guarda por poco tiempo"
+          ],
+          "answer": 0,
+          "explanation": "Guardarla mojada genera un hongo denominado 'mal de tierra' que pudre la carpa. Si llegara a ocurrir, hay que ventilarla hasta que se seque.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 42,
+            "topic": "carpa"
+          }
+        },
+        {
+          "type": "true_false",
+          "statement": "Se debe evitar iluminar y tocar las paredes y el techo de la carpa, porque la luz dilata la tela y ayuda a que haya filtración de agua.",
+          "answer": true,
+          "explanation": "Tocar e iluminar las paredes y especialmente el techo dilata la tela y favorece la filtración de agua. Es de los cuidados menos conocidos y más importantes en noches de lluvia.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 43,
+            "topic": "carpa"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "¿Cuál de los siguientes NO es un cuidado correcto de la carpa?",
+          "options": [
+            "Empacar la carpa con el varillaje en la misma tula para no perder piezas",
+            "No caminar con zapatos en su interior",
+            "Limpiar la superficie con un trapo húmedo y esperar a que seque antes de empacarla",
+            "Revisar que no queden objetos dentro al momento de recogerla"
+          ],
+          "answer": 0,
+          "explanation": "Es al revés: NO se debe empacar la carpa con el varillaje en la misma tula, porque los tubos pueden rasgarla. Los otros tres sí son cuidados correctos.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 43,
+            "topic": "carpa"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "Para un campamento en alta montaña, ¿qué tipo de carpa es ideal y por qué?",
+          "options": [
+            "La iglú: su forma de cúpula resiste los vientos y decanta fácilmente el agua",
+            "La estructural: sus ventanas laterales mantienen el aire circulando",
+            "La iglú: su forma rectangular da más espacio interior",
+            "Cualquiera: el tipo de carpa no depende del clima"
+          ],
+          "answer": 0,
+          "explanation": "La iglú es circular en forma de cúpula, usada en alta y media montaña: su forma permite alta resistencia a los vientos y fácil decantación del agua. La estructural, rectangular y con ventanas laterales, es para climas cálidos por su circulación de aire.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 43,
+            "topic": "carpa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "aspirante-tec-construcciones-01",
+      "title": "Construcciones básicas y equipamiento",
+      "xp": 20,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "statement": "¿Qué es el tabú en un campamento?",
+          "options": [
+            "La demarcación o límite que se hace alrededor del campamento, las carpas, cocinas y otros espacios",
+            "Un tema del que no se puede hablar en el campamento",
+            "La zona donde se guardan los alimentos",
+            "El reglamento interno de cada semilla"
+          ],
+          "answer": 0,
+          "explanation": "El tabú es la demarcación o límite alrededor del campamento, carpas, cocinas, patio de banderas y otros espacios. Asemeja las paredes que encontramos en cualquier lugar, y tendrá puertas que serán los únicos lugares para entrar o salir.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 39,
+            "topic": "construcciones"
+          }
+        },
+        {
+          "type": "true_false",
+          "statement": "Si tienes afán, puedes pasar por debajo del tabú en lugar de buscar la puerta.",
+          "answer": false,
+          "explanation": "No se debe pasar ni por encima ni por debajo del tabú: las puertas son los únicos lugares para entrar o salir. El tabú se respeta como se respetan las paredes de una casa.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 39,
+            "topic": "construcciones"
+          }
+        },
+        {
+          "type": "matching",
+          "statement": "Empareja cada construcción con su función",
+          "pairs": [
+            {
+              "left": "Maletero",
+              "right": "Dar más espacio dentro de las carpas"
+            },
+            {
+              "left": "Basurero",
+              "right": "Lugar donde los campistas depositan finalmente la basura"
+            },
+            {
+              "left": "Portadas",
+              "right": "Entradas al campamento: la primera impresión de quien llega"
+            }
+          ],
+          "explanation": "El maletero (el más común es el mochilero) libera espacio en la carpa; el basurero, también llamado vertedero o tiradero, concentra la basura; y las portadas son la entrada y la carta de presentación del campamento.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 40,
+            "topic": "construcciones"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "Si el campamento es en un lugar húmedo o frío, ¿qué cuidado especial requiere el maletero?",
+          "options": [
+            "Cubrirlo con un plástico para evitar que se mojen los maletines",
+            "Construirlo dentro de la carpa",
+            "Elevarlo al doble de la altura normal",
+            "No usar maletero en esos climas"
+          ],
+          "answer": 0,
+          "explanation": "En lugares húmedos o fríos el maletero se debe cubrir con un plástico para evitar que se mojen los maletines.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 40,
+            "topic": "construcciones"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "¿Por qué las cocinas serán poco a poco menos usadas en los campamentos?",
+          "options": [
+            "Por la contaminación y los incendios forestales",
+            "Porque ya nadie sabe construirlas",
+            "Porque la comida llega preparada",
+            "Porque están prohibidas por ley"
+          ],
+          "answer": 0,
+          "explanation": "Con la llegada de la tecnología, y teniendo en cuenta la contaminación y los incendios forestales, las cocinas serán cada vez menos usadas. Aun así, es importante que los campistas aprendan a elaborarlas y puedan utilizarlas con la práctica.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 40,
+            "topic": "construcciones"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "¿De qué está compuesto el menaje del campista?",
+          "options": [
+            "Plato pando, plato hondo, y los cubiertos o marmita",
+            "Linterna, pilas y bolsa plástica",
+            "Jabonera, cortaúñas y espejo metálico",
+            "Carpa, sobrecarpa y varillaje"
+          ],
+          "answer": 0,
+          "explanation": "El menaje se compone del plato pando, el hondo, y los cubiertos o marmita. Se recomienda llevarlo en un empaque individual; los metálicos permiten cocinar en ellos, pero con cuidado porque se pueden quemar.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 45,
+            "topic": "equipamiento"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "¿Por qué se recomiendan las linternas con bombillos LED?",
+          "options": [
+            "Porque consumen menos carga, lo que optimiza las pilas",
+            "Porque iluminan con luz más cálida",
+            "Porque son las únicas que se consiguen",
+            "Porque no necesitan pilas"
+          ],
+          "answer": 0,
+          "explanation": "Las linternas LED consumen menos carga y optimizan las pilas. Además, la linterna debe guardarse en una bolsa de plástico para que no se moje, y siempre hay que contar con un par de baterías de repuesto.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 45,
+            "topic": "equipamiento"
+          }
+        },
+        {
+          "type": "true_false",
+          "statement": "Después de cada actividad conviene revisar el equipamiento: eliminar los elementos que no fueron necesarios y añadir los que hicieron falta, según el evento.",
+          "answer": true,
+          "explanation": "El equipamiento se elige según la actividad a realizar: después de cada actividad se eliminan los elementos innecesarios y se añaden los que se consideren necesarios para el siguiente evento. El morral se afina con la experiencia.",
+          "source": {
+            "booklet": "tecnicas",
+            "page": 44,
+            "topic": "equipamiento"
+          }
+        }
+      ]
     }
   ]
 }
