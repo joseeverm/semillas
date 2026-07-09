@@ -1,0 +1,553 @@
+{
+  "unit": "ambiental",
+  "lessons": [
+    {
+      "id": "aspirante-amb-conceptos-01",
+      "title": "Conceptos base",
+      "xp": 20,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "statement": "Según la cartilla, ¿qué es el medio ambiente?",
+          "options": [
+            "El compendio de valores naturales, sociales y culturales existentes en un lugar y un momento determinado",
+            "El conjunto de especies animales que habitan una región geográfica",
+            "El estudio del lugar donde se habita y de los seres que lo pueblan",
+            "Únicamente los recursos naturales renovables de un territorio"
+          ],
+          "answer": 0,
+          "explanation": "El medio ambiente no es solo lo natural: incluye lo social y lo cultural, y afecta tanto la vida material como psicológica del ser humano y de las generaciones futuras.",
+          "source": {
+            "booklet": "ambiental",
+            "page": 10,
+            "topic": "Definición de medio ambiente"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "Para el programa Nacional Campamentos Juveniles, ¿cómo se define la conciencia ambiental?",
+          "options": [
+            "El impacto de los seres humanos en el entorno y entender cómo sus acciones diarias afectan el futuro del medio ambiente",
+            "El conjunto de leyes que regulan el uso del agua y los bosques",
+            "El estudio científico de los ecosistemas y su equilibrio",
+            "La protección legal de las áreas naturales protegidas del país"
+          ],
+          "answer": 0,
+          "explanation": "La conciencia ambiental es un entendimiento, no una ciencia ni una ley: reconocer el efecto de las propias acciones. Por eso el programa la trabaja como responsabilidad de cada persona.",
+          "source": {
+            "booklet": "ambiental",
+            "page": 10,
+            "topic": "Definición de conciencia ambiental"
+          }
+        },
+        {
+          "type": "matching",
+          "statement": "Relaciona cada elemento con el rasgo que la cartilla usa para definirlo.",
+          "pairs": [
+            {
+              "left": "Agua",
+              "right": "Compuesto insustituible, el más abundante en la naturaleza"
+            },
+            {
+              "left": "Aire",
+              "right": "Mezcla homogénea de gases que forma la atmósfera terrestre"
+            },
+            {
+              "left": "Tierra",
+              "right": "Componente natural y finito, con minerales y materia orgánica"
+            },
+            {
+              "left": "Fuego",
+              "right": "Calor y luz producidos por la combustión"
+            }
+          ],
+          "explanation": "Los cuatro son los conceptos básicos que la cartilla pide manejar. El fuego es el único que no es materia sino un proceso: la manifestación visual de la combustión.",
+          "source": {
+            "booklet": "ambiental",
+            "page": 11,
+            "topic": "Elementos: agua, aire, tierra, fuego"
+          }
+        },
+        {
+          "type": "true_false",
+          "statement": "La biodiversidad se refiere únicamente a la cantidad de especies distintas, sin tener en cuenta las diferencias dentro de una misma especie.",
+          "answer": false,
+          "explanation": "La cartilla incluye expresamente las grandes variaciones genéticas dentro de una misma especie. La diversidad no es solo entre especies, también dentro de ellas.",
+          "source": {
+            "booklet": "ambiental",
+            "page": 11,
+            "topic": "Biodiversidad"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "La cartilla llama al agua el 'elemento estructurante de la dinámica natural y social del territorio'. ¿Por qué?",
+          "options": [
+            "Porque es determinante en los procesos físicos, químicos y biológicos que gobiernan el medio natural",
+            "Porque es el único recurso renovable del planeta",
+            "Porque puede transformarse directamente en energía eléctrica",
+            "Porque es el más escaso de los recursos naturales"
+          ],
+          "answer": 0,
+          "explanation": "Sin agua no es posible la vida ni la actividad del hombre. Su papel en los procesos que gobiernan el medio natural es lo que la hace estructurante.",
+          "source": {
+            "booklet": "ambiental",
+            "page": 11,
+            "topic": "Agua como elemento estructurante"
+          }
+        },
+        {
+          "type": "true_false",
+          "statement": "Según la cartilla, el fuego puede describirse como la manifestación visual del proceso de combustión.",
+          "answer": true,
+          "explanation": "El fuego nace de una reacción química de oxidación y genera llamas, vapor de agua y dióxido de carbono. Es el calor y la luz que produce esa combustión.",
+          "source": {
+            "booklet": "ambiental",
+            "page": 11,
+            "topic": "Fuego"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "statement": "La cartilla describe la Tierra, como componente del ambiente, como un recurso natural y {blank}, constituido por minerales, aire, agua y materia orgánica.",
+          "options": [
+            "finito",
+            "infinito",
+            "renovable",
+            "inagotable"
+          ],
+          "answer": [
+            "finito"
+          ],
+          "explanation": "Aunque es un componente fundamental, la Tierra es finita. Esa idea de límite es la base de por qué su conservación importa.",
+          "source": {
+            "booklet": "ambiental",
+            "page": 11,
+            "topic": "Tierra"
+          }
+        }
+      ]
+    },
+    {
+      "id": "aspirante-amb-clima-energia-01",
+      "title": "Clima, energía y recursos",
+      "xp": 20,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "statement": "Según la cartilla, ¿a qué se debe el cambio climático?",
+          "options": [
+            "Tanto a causas naturales como a la acción del hombre",
+            "Únicamente a la acción del hombre",
+            "Únicamente a causas naturales del planeta",
+            "Solo a la quema de combustibles fósiles"
+          ],
+          "answer": 0,
+          "explanation": "La cartilla es explícita: hay causas naturales y humanas, y el cambio afecta todos los parámetros climáticos (temperatura, precipitaciones, nubosidad) en escalas de tiempo muy diversas.",
+          "source": {
+            "booklet": "ambiental",
+            "page": 12,
+            "topic": "Cambio climático"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "¿Cuál es la definición de desarrollo sostenible según la cartilla?",
+          "options": [
+            "Satisfacer las necesidades de las generaciones presentes sin comprometer las de las generaciones futuras",
+            "Explotar al máximo los recursos naturales para el crecimiento económico actual",
+            "Integrar los gastos medioambientales dentro de la economía",
+            "Detener de inmediato todo uso de recursos no renovables"
+          ],
+          "answer": 0,
+          "explanation": "El eje del desarrollo sostenible es el equilibrio entre generaciones. Integrar los gastos medioambientales en la economía es otra cosa: la economía medioambiental.",
+          "source": {
+            "booklet": "ambiental",
+            "page": 13,
+            "topic": "Desarrollo sostenible"
+          }
+        },
+        {
+          "type": "true_false",
+          "statement": "Según la cartilla, los combustibles fósiles (carbón, gas y petróleo) son un ejemplo de energía renovable.",
+          "answer": false,
+          "explanation": "La cartilla los presenta como recursos almacenados, formados hace millones de años. Las renovables son la solar, la eólica, la hidráulica y los combustibles biológicos.",
+          "source": {
+            "booklet": "ambiental",
+            "page": 12,
+            "topic": "Combustibles fósiles"
+          }
+        },
+        {
+          "type": "matching",
+          "statement": "Relaciona cada tipo de energía con la fuente o rasgo que la cartilla le atribuye.",
+          "pairs": [
+            {
+              "left": "Energía eólica",
+              "right": "Aprovecha las corrientes de aire generadas por el calentamiento"
+            },
+            {
+              "left": "Energía hidráulica",
+              "right": "Aprovecha la energía cinética y potencial del agua"
+            },
+            {
+              "left": "Energía solar",
+              "right": "Se obtiene captando la luz y el calor del sol"
+            },
+            {
+              "left": "Energía nuclear",
+              "right": "Libera la energía que une los átomos, empleando uranio"
+            }
+          ],
+          "explanation": "Tres de estas son renovables (eólica, hidráulica, solar); la nuclear no lo es, porque el uranio es un recurso agotable. Curiosamente la eólica también procede del sol, de forma indirecta.",
+          "source": {
+            "booklet": "ambiental",
+            "page": 13,
+            "topic": "Tipos de energía"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "¿Cuál de estos es un ejemplo de combustible biológico (biofuel) según la cartilla?",
+          "options": [
+            "El etanol",
+            "El petróleo",
+            "El carbón",
+            "El gas natural"
+          ],
+          "answer": 0,
+          "explanation": "Los combustibles biológicos vienen de la biomasa (madera, paja, gránulos, etanol) y son energía solar reconvertida. Los otros tres son combustibles fósiles.",
+          "source": {
+            "booklet": "ambiental",
+            "page": 12,
+            "topic": "Combustible biológico"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "Según la cartilla, ¿cuál es la causa principal de la deforestación?",
+          "options": [
+            "La actividad humana, sobre todo las talas para la industria maderera y para obtener suelo agrícola",
+            "Los incendios provocados por rayos en época seca",
+            "El cambio climático de origen natural",
+            "La erosión del suelo causada por las lluvias intensas"
+          ],
+          "answer": 0,
+          "explanation": "La cartilla atribuye la deforestación directamente a la acción del hombre sobre la naturaleza, no a causas naturales.",
+          "source": {
+            "booklet": "ambiental",
+            "page": 12,
+            "topic": "Deforestación"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "statement": "En el ciclo natural, las plantas verdes producen oxígeno y azúcares a partir de dióxido de carbono y agua durante la {blank}.",
+          "options": [
+            "fotosíntesis",
+            "respiración celular",
+            "combustión",
+            "oxidación"
+          ],
+          "answer": [
+            "fotosíntesis"
+          ],
+          "explanation": "En la respiración celular ocurre lo inverso: azúcares y oxígeno se transforman en energía, dióxido de carbono y agua. Este ciclo volverá a aparecer con el ciclo del agua en el mundo Semilla.",
+          "source": {
+            "booklet": "ambiental",
+            "page": 12,
+            "topic": "Ciclo natural"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "Un conjunto de organismos vivos interdependientes junto con el medio físico donde se relacionan y comparten hábitat forma, según la cartilla, un...",
+          "options": [
+            "Ecosistema",
+            "Hábitat",
+            "Nicho ecológico",
+            "Bioma"
+          ],
+          "answer": 0,
+          "explanation": "Un ecosistema combina la biocenosis (los organismos vivos) y el biotopo (el medio físico). Hábitat y nicho, que se parecen, se trabajan en la unidad de Ecología.",
+          "source": {
+            "booklet": "ambiental",
+            "page": 13,
+            "topic": "Ecosistema"
+          }
+        }
+      ]
+    },
+    {
+      "id": "aspirante-amb-legales-01",
+      "title": "Aspectos legales y acuerdos",
+      "xp": 20,
+      "questions": [
+        {
+          "type": "matching",
+          "statement": "Relaciona cada norma o acuerdo con lo que la cartilla dice que hizo.",
+          "pairs": [
+            {
+              "left": "Cumbre de Estocolmo (1972)",
+              "right": "Primera gran conferencia de la ONU sobre medio ambiente"
+            },
+            {
+              "left": "Ley 23 de 1973",
+              "right": "Código de Recursos Naturales Renovables y Protección al medio Ambiente"
+            },
+            {
+              "left": "Declaración de Río (1992)",
+              "right": "Estableció 27 principios sobre medio ambiente y desarrollo"
+            },
+            {
+              "left": "Ley 99 de 1993",
+              "right": "Creó el Ministerio del Medio Ambiente y organizó el SINA"
+            }
+          ],
+          "explanation": "Dos hitos internacionales (Estocolmo y Río) y dos normas colombianas (Ley 23 y Ley 99). La Ley 99 es la más importante: de ella nace el Ministerio.",
+          "source": {
+            "booklet": "ambiental",
+            "page": 15,
+            "topic": "Normas y acuerdos ambientales"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "statement": "La Ley 99 de 1993 creó el Ministerio del Medio Ambiente y organizó el Sistema Nacional Ambiental, conocido por la sigla {blank}.",
+          "options": [
+            "SINA",
+            "SNAP",
+            "MADS",
+            "CAR"
+          ],
+          "answer": [
+            "SINA"
+          ],
+          "explanation": "SINA es el Sistema Nacional Ambiental. La misma Ley 99 reordenó todo el sector público encargado de la gestión ambiental en Colombia.",
+          "source": {
+            "booklet": "ambiental",
+            "page": 16,
+            "topic": "Ley 99 de 1993 y el SINA"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "¿Qué establece el Artículo 79 de la Constitución de 1991?",
+          "options": [
+            "Que todas las personas tienen derecho a gozar de un ambiente sano",
+            "Que la educación es un derecho de la persona y un servicio público",
+            "Que el Estado creará un ministerio del medio ambiente",
+            "Que se destinará un porcentaje de los tributos a la conservación ambiental"
+          ],
+          "answer": 0,
+          "explanation": "El Artículo 79 también impone al Estado el deber de proteger la diversidad e integridad del ambiente y conservar las áreas de especial importancia ecológica.",
+          "source": {
+            "booklet": "ambiental",
+            "page": 15,
+            "topic": "Constitución 1991 - Art. 79"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "Según el Artículo 67 de la Constitución de 1991, la educación debe formar al colombiano, entre otras cosas, para...",
+          "options": [
+            "La protección del ambiente",
+            "La explotación de los recursos naturales",
+            "El fortalecimiento de la industria nacional",
+            "La defensa del territorio nacional"
+          ],
+          "answer": 0,
+          "explanation": "El Artículo 67 liga la educación con el respeto a los derechos humanos, la paz, la democracia y la protección del ambiente. En eso se apoya un programa de educación extraescolar como Campamentos Juveniles.",
+          "source": {
+            "booklet": "ambiental",
+            "page": 15,
+            "topic": "Constitución 1991 - Art. 67"
+          }
+        },
+        {
+          "type": "true_false",
+          "statement": "La Declaración de Río de 1992 fue anterior a la Cumbre de Estocolmo.",
+          "answer": false,
+          "explanation": "Fue al revés: Estocolmo (1972) ocurrió veinte años antes que Río (1992) y fue la primera gran conferencia de la ONU sobre el tema.",
+          "source": {
+            "booklet": "ambiental",
+            "page": 15,
+            "topic": "Cronología: Estocolmo vs. Río"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "El Principio 21 de la Declaración de Río (1992) hace un llamado especial a movilizar la creatividad y el valor de...",
+          "options": [
+            "Los jóvenes del mundo",
+            "Los gobiernos nacionales",
+            "Las empresas privadas",
+            "Los organismos científicos"
+          ],
+          "answer": 0,
+          "explanation": "Es el principio más cercano al espíritu de Campamentos Juveniles: los jóvenes como motor de una alianza mundial por el desarrollo sostenible. El Principio 10 trata del acceso de todos a la información ambiental.",
+          "source": {
+            "booklet": "ambiental",
+            "page": 16,
+            "topic": "Declaración de Río - Principio 21"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "¿Qué reglamenta el Decreto 4741 de 2005?",
+          "options": [
+            "La prevención y el manejo de los residuos o desechos peligrosos",
+            "La creación de los parques nacionales naturales",
+            "El uso del agua potable en las zonas rurales",
+            "La tala de bosques por parte de la industria maderera"
+          ],
+          "answer": 0,
+          "explanation": "Regula parcialmente los residuos peligrosos dentro de la gestión integral. Es la norma más específica y reciente de esta lista.",
+          "source": {
+            "booklet": "ambiental",
+            "page": 16,
+            "topic": "Decreto 4741 de 2005"
+          }
+        },
+        {
+          "type": "ordering",
+          "statement": "Ordena estos hitos ambientales del más antiguo al más reciente.",
+          "items": [
+            "Cumbre de Estocolmo (1972)",
+            "Ley 23 (1973)",
+            "Declaración de Río (1992)",
+            "Ley 99 (1993)"
+          ],
+          "answer": [
+            "Cumbre de Estocolmo (1972)",
+            "Ley 23 (1973)",
+            "Declaración de Río (1992)",
+            "Ley 99 (1993)"
+          ],
+          "explanation": "La secuencia muestra un patrón: Colombia acompañó los hitos internacionales (Estocolmo, Río) con normas propias justo después (Ley 23 tras Estocolmo, Ley 99 tras Río).",
+          "source": {
+            "booklet": "ambiental",
+            "page": 15,
+            "topic": "Cronología de normas y acuerdos"
+          }
+        }
+      ]
+    },
+    {
+      "id": "aspirante-amb-entidades-01",
+      "title": "Entidades ambientales en Colombia",
+      "xp": 20,
+      "questions": [
+        {
+          "type": "matching",
+          "statement": "Relaciona cada entidad ambiental con su función principal según la cartilla.",
+          "pairs": [
+            {
+              "left": "Ministerio de Medio Ambiente",
+              "right": "Define la política Nacional Ambiental"
+            },
+            {
+              "left": "Parques Nacionales Naturales",
+              "right": "Administra el Sistema de Parques y coordina las áreas protegidas"
+            },
+            {
+              "left": "Corporaciones Autónomas Regionales (CAR)",
+              "right": "Administran el ambiente en su jurisdicción regional"
+            },
+            {
+              "left": "Autoridades Ambientales Urbanas",
+              "right": "Ejercen las funciones de las CAR en las grandes ciudades"
+            }
+          ],
+          "explanation": "Cuatro niveles: uno nacional que fija la política (Ministerio), uno para las áreas protegidas (Parques), y dos que administran territorio (CAR en lo regional, Urbanas en las grandes ciudades).",
+          "source": {
+            "booklet": "ambiental",
+            "page": 17,
+            "topic": "Entidades ambientales - funciones"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "¿Qué son las Corporaciones Autónomas Regionales (CAR)?",
+          "options": [
+            "Entes públicos con autonomía administrativa y financiera que administran el ambiente en su jurisdicción",
+            "Empresas privadas que venden servicios de conservación ambiental",
+            "Dependencias directas del Ministerio, sin autonomía propia",
+            "Organizaciones internacionales de protección de la naturaleza"
+          ],
+          "answer": 0,
+          "explanation": "Tienen patrimonio propio y personería jurídica, y agrupan entidades territoriales que comparten un mismo ecosistema o unidad geográfica.",
+          "source": {
+            "booklet": "ambiental",
+            "page": 17,
+            "topic": "Corporaciones Autónomas Regionales"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "statement": "Las Autoridades Ambientales Urbanas existen en municipios o áreas metropolitanas cuya población urbana es igual o superior a {blank} de habitantes.",
+          "options": [
+            "un millón",
+            "cien mil",
+            "quinientos mil",
+            "cinco millones"
+          ],
+          "answer": [
+            "un millón"
+          ],
+          "explanation": "Por debajo de ese umbral de población urbana, la autoridad ambiental sobre el territorio la ejercen las CAR regionales.",
+          "source": {
+            "booklet": "ambiental",
+            "page": 18,
+            "topic": "Autoridades Ambientales Urbanas"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "Parques Nacionales Naturales de Colombia fue creada como Unidad Administrativa Especial mediante el...",
+          "options": [
+            "Decreto 3572 de 2011",
+            "Ley 99 de 1993",
+            "Ley 23 de 1973",
+            "Decreto 4741 de 2005"
+          ],
+          "answer": 0,
+          "explanation": "Cuidado con confundirla: la Ley 99 de 1993 creó el Ministerio, no Parques. Parques Nacionales nace del Decreto 3572 de 2011.",
+          "source": {
+            "booklet": "ambiental",
+            "page": 17,
+            "topic": "Parques Nacionales Naturales - creación"
+          }
+        },
+        {
+          "type": "true_false",
+          "statement": "El Ministerio de Medio Ambiente es la entidad pública encargada de definir la política Nacional Ambiental.",
+          "answer": true,
+          "explanation": "Además de fijar la política, promueve la recuperación, conservación y aprovechamiento de los recursos naturales renovables para garantizar el derecho a gozar y heredar un ambiente sano.",
+          "source": {
+            "booklet": "ambiental",
+            "page": 16,
+            "topic": "Ministerio de Medio Ambiente"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "Respecto al recurso hídrico, ¿de qué se encarga Parques Nacionales Naturales?",
+          "options": [
+            "De otorgar concesiones de agua en los parques y las áreas protegidas",
+            "De fijar las tarifas del agua potable en las ciudades",
+            "De construir represas para generar energía hidráulica",
+            "De repartir el agua entre los municipios del país"
+          ],
+          "answer": 0,
+          "explanation": "Su competencia sobre el agua se limita al territorio que administra: los parques nacionales y las áreas protegidas, junto con su control y conservación.",
+          "source": {
+            "booklet": "ambiental",
+            "page": 17,
+            "topic": "Parques Nacionales - recurso hídrico"
+          }
+        }
+      ]
+    }
+  ]
+}
