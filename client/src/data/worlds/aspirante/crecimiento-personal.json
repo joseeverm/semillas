@@ -134,13 +134,13 @@
           "type": "multiple_choice",
           "statement": "¿Qué tipo de programa es Campamentos Juveniles?",
           "options": [
-            "Un programa de educación extraescolar para jóvenes voluntarios",
+            "Un programa de educación extraescolar para jóvenes",
             "Un programa deportivo de alto rendimiento",
             "Un programa escolar obligatorio de recreación",
             "Un programa militar de formación juvenil"
           ],
           "answer": 0,
-          "explanation": "Es un programa de educación extraescolar para jóvenes hombres y mujeres voluntarios, que busca contribuir a su formación y desarrollo integral a través de actividades recreativas, deportivas y culturales en contacto con la naturaleza.",
+          "explanation": "El Programa Nacional Campamentos Juveniles, es un programa nacional de educación extraescolar para jóvenes entre los 13 y 28 años, basado en un principio pedagógico centrado en el aprendizaje experiencial, que promueve el desarrollo social y comunitario a través de las prácticas recreativas.",
           "source": {
             "booklet": "crecimiento-personal",
             "page": 16,
@@ -171,13 +171,13 @@
           "type": "multiple_choice",
           "statement": "Según la misión, ¿en qué se forma a los jóvenes colombianos?",
           "options": [
-            "En liderazgo y voluntariado",
-            "En deporte y competencia",
-            "En supervivencia y campismo",
-            "En política y ciudadanía"
+            "En el voluntariado y el afianzamiento de valores integrales",
+            "En disciplina militar y jerarquía",
+            "En competencia deportiva de alto rendimiento",
+            "En doctrina religiosa y catequesis"
           ],
           "answer": 0,
-          "explanation": "La misión es formar jóvenes colombianos entre los 13 y 28 años en liderazgo y voluntariado, para que orienten y ejecuten proyectos sociales comunitarios de ocio y recreación.",
+          "explanation": "La misión del programa es fomentar el voluntariado y el afianzamiento de los valores integrales de los adolescentes y jóvenes colombianos. Eso se logra mediante prácticas de recreación, campismo, buen aprovechamiento del tiempo y liderazgo, con participación en el diseño, ejecución y evaluación de planes, programas y proyectos de impacto comunitario. Ojo: el campismo y la recreación son los medios, no el fin de la misión.",
           "source": {
             "booklet": "crecimiento-personal",
             "page": 16,
@@ -197,15 +197,15 @@
         },
         {
           "type": "multiple_choice",
-          "statement": "Según la visión de la cartilla, Campamentos Juveniles será el programa nacional más grande de Colombia ¿en qué campo?",
+          "statement": "Según la visión, Campamentos Juveniles será el programa nacional más grande de Colombia ¿en qué campo?",
           "options": [
-            "Voluntariado",
-            "Deporte formativo juvenil",
-            "Educación ambiental",
-            "Turismo de naturaleza"
+            "Voluntariado juvenil",
+            "Deporte competitivo",
+            "Turismo estudiantil",
+            "Formación técnica y laboral"
           ],
           "answer": 0,
-          "explanation": "La visión proyecta a Campamentos Juveniles como la red nacional de voluntariado, tecnicas campamentiles y recreación más grande de Colombia, con proyección internacional.",
+          "explanation": "La visión dice que para el año 2030 el programa será la red nacional más grande de adolescentes y jóvenes voluntarios del país, reconocida por su capacidad de realizar transformación comunitaria a través de la práctica recreativa y campamentil en todo el territorio colombiano, con proyección internacional. Ojo: la meta es ser la red de voluntariado más grande; la recreación y el campismo son el medio para lograrlo.",
           "source": {
             "booklet": "crecimiento-personal",
             "page": 16,
@@ -216,7 +216,7 @@
           "type": "true_false",
           "statement": "Uno de los objetivos generales es fomentar la unión y confraternidad entre las diferentes culturas y regiones del país.",
           "answer": true,
-          "explanation": "El primer objetivo general es fomentar la unión confraternidad entre las diferentes culturas y regiones del país, a través de la ejecucuión de eventos municipales, distritales, departamentales, regionales y nacionales.",
+          "explanation": "Un objetivo general es fomentar la unión y confraternidad entre las diferentes culturas y regiones del país, a través de la ejecucuión de eventos municipales, distritales, departamentales, regionales y nacionales.",
           "source": {
             "booklet": "crecimiento-personal",
             "page": 16,
