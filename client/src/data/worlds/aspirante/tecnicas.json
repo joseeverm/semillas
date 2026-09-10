@@ -23,17 +23,7 @@
             "topic": "formaciones"
           }
         },
-        {
-          "type": "true_false",
-          "statement": "La formación general también recibe el nombre de formación en bosque.",
-          "answer": true,
-          "explanation": "Entre las formaciones más usadas está la 'general o bosque'. En la cartilla de Crecimiento Personal la misma formación aparece como 'general o por semillas': ambos nombres conviven en el programa.",
-          "source": {
-            "booklet": "tecnicas",
-            "page": 20,
-            "topic": "formaciones"
-          }
-        },
+       
         {
           "type": "multiple_choice",
           "statement": "Cuando el líder da la voz '¡Atención…!', ¿qué tipo de voz de mando está usando?",
@@ -255,23 +245,6 @@
           ],
           "answer": 0,
           "explanation": "El SOS son 3 pitos cortos y 3 largos. Es la señal de emergencia y todo campista debe reconocerla.",
-          "source": {
-            "booklet": "tecnicas",
-            "page": 24,
-            "topic": "senales"
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "statement": "¿Cuál es la señal de pito para la reunión por bosques?",
-          "options": [
-            "1 pito corto, 1 largo y 2 cortos",
-            "3 pitos cortos y 1 largo",
-            "2 pitos largos y 1 corto",
-            "1 pito largo"
-          ],
-          "answer": 0,
-          "explanation": "La reunión por bosques se señala con 1 pito corto, 1 largo y 2 cortos. No la confundas con la reunión general, que son 3 cortos y 1 largo.",
           "source": {
             "booklet": "tecnicas",
             "page": 24,
