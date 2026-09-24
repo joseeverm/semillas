@@ -455,30 +455,7 @@
             "topic": "nudos-teoria"
           }
         },
-        {
-          "type": "matching",
-          "statement": "Dentro de lo que comúnmente llamamos 'nudo' hay categorías distintas. Empareja cada una con su definición",
-          "pairs": [
-            {
-              "left": "El nudo",
-              "right": "La unión de una cuerda con un chicote"
-            },
-            {
-              "left": "La vuelta",
-              "right": "La unión de una cuerda con otro elemento que, por lo general, está fijo"
-            },
-            {
-              "left": "El amarre",
-              "right": "La unión de dos elementos, fijos o móviles, formado por vueltas"
-            }
-          ],
-          "explanation": "Nudo, vuelta y amarre son cosas distintas: el nudo une cuerda con chicote, la vuelta une la cuerda a un elemento fijo, y el amarre une dos elementos entre sí.",
-          "source": {
-            "booklet": "tecnicas",
-            "page": 26,
-            "topic": "nudos-teoria"
-          }
-        },
+        
         {
           "type": "multiple_choice",
           "statement": "¿Cuál de las siguientes NO es una cualidad de un buen nudo?",
@@ -606,23 +583,7 @@
             "topic": "nudos-basicos"
           }
         },
-        {
-          "type": "multiple_choice",
-          "statement": "¿Cómo se realiza el ballestrinque?",
-          "options": [
-            "Con dos presillas una detrás de otra, donde la que está adelante esconde la que está atrás",
-            "Con dos senos enfrentados que se cruzan por el centro",
-            "Pasando el chicote tres veces alrededor del firme",
-            "Con un nudo simple sobre otro nudo simple"
-          ],
-          "answer": 0,
-          "explanation": "El ballestrinque se hace con dos presillas, una detrás de otra, donde la de adelante esconde la de atrás.",
-          "source": {
-            "booklet": "tecnicas",
-            "page": 28,
-            "topic": "nudos-basicos"
-          }
-        },
+        
         {
           "type": "matching",
           "statement": "Empareja cada nudo con su uso",
@@ -647,34 +608,8 @@
             "topic": "nudos-basicos"
           }
         },
-        {
-          "type": "true_false",
-          "statement": "En el nudo llano o rizo, los dos chicotes deben salir paralelos al firme.",
-          "answer": true,
-          "explanation": "Esa es la clave del llano bien hecho: se toman los dos chicotes, uno pasa por encima del otro con una vuelta, se repite la vuelta, y los chicotes deben salir paralelos al firme.",
-          "source": {
-            "booklet": "tecnicas",
-            "page": 29,
-            "topic": "nudos-basicos"
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "statement": "¿Cómo se realiza el nudo leñador?",
-          "options": [
-            "Presilla alrededor del elemento a sujetar, vuelta al firme con el chicote y varios cotes sobre la presilla",
-            "Dos presillas cruzadas sobre el elemento y un nudo simple de remate",
-            "Un seno alrededor del elemento ajustado con los dos chicotes",
-            "Una 'S' con la cuerda acotada con gazas en los extremos"
-          ],
-          "answer": 0,
-          "explanation": "El leñador: presilla alrededor del elemento que se va a sujetar, se le da vuelta al firme con el chicote y se hacen varios cotes sobre la presilla ya hecha. Es un nudo de sujeción.",
-          "source": {
-            "booklet": "tecnicas",
-            "page": 30,
-            "topic": "nudos-basicos"
-          }
-        },
+        
+       
         {
           "type": "multiple_choice",
           "statement": "¿A qué grupo de la clasificación pertenece el nudo llano o rizo?",
@@ -787,23 +722,7 @@
             "topic": "nudos-basicos"
           }
         },
-        {
-          "type": "multiple_choice",
-          "statement": "¿Cómo se realiza el nudo margarita?",
-          "options": [
-            "Formando una 'S' con la cuerda y acotando con una presilla o gaza cada seno que se forma a los lados",
-            "Dividiendo la cuerda en dos partes iguales y haciendo senos alternados",
-            "Con dos presillas una detrás de otra sobre el firme",
-            "Dando vueltas alrededor de dos maderos paralelos"
-          ],
-          "answer": 0,
-          "explanation": "La margarita se hace formando una 'S' con la cuerda, y en cada uno de los senos que se forman a los lados se acota con una presilla o gaza.",
-          "source": {
-            "booklet": "tecnicas",
-            "page": 32,
-            "topic": "nudos-basicos"
-          }
-        },
+       
         {
           "type": "multiple_choice",
           "statement": "¿Para qué se utiliza el nudo fugitivo?",
@@ -844,18 +763,8 @@
             "page": 31,
             "topic": "nudos-basicos"
           }
-        },
-        {
-          "type": "true_false",
-          "statement": "La vuelta escota se ajusta con los cuatro firmes de las dos cuerdas.",
-          "answer": true,
-          "explanation": "Se hace un seno en una cuerda, se introduce el chicote de la otra por el seno de abajo hacia arriba formando una presilla alrededor del seno, y el nudo se ajusta con los cuatro firmes de las dos cuerdas. Es un nudo de unión.",
-          "source": {
-            "booklet": "tecnicas",
-            "page": 34,
-            "topic": "nudos-basicos"
-          }
         }
+        
       ]
     },
     {
@@ -960,28 +869,7 @@
             "topic": "amarres"
           }
         },
-        {
-          "type": "ordering",
-          "statement": "Ordena los pasos del amarre cuadrado",
-          "items": [
-            "Azocar el amarre",
-            "Hacer un ballestrinque en el tronco vertical dejando centímetros libres del chicote",
-            "Terminar con un llano o rizo usando el chicote libre",
-            "Pasar la cabuya por delante del tronco horizontal y por detrás del vertical"
-          ],
-          "answer": [
-            "Hacer un ballestrinque en el tronco vertical dejando centímetros libres del chicote",
-            "Pasar la cabuya por delante del tronco horizontal y por detrás del vertical",
-            "Azocar el amarre",
-            "Terminar con un llano o rizo usando el chicote libre"
-          ],
-          "explanation": "El amarre cuadrado: ballestrinque en el vertical, la cabuya teje por delante del horizontal y por detrás del vertical, se azoca, y se remata con llano o rizo.",
-          "source": {
-            "booklet": "tecnicas",
-            "page": 35,
-            "topic": "amarres"
-          }
-        },
+       
         {
           "type": "multiple_choice",
           "statement": "Vas a construir una mesa uniendo troncos que se cruzan en ángulo recto. ¿Qué amarre usas?",
@@ -1220,40 +1108,8 @@
             "topic": "construcciones"
           }
         },
-        {
-          "type": "multiple_choice",
-          "statement": "¿Por qué las cocinas serán poco a poco menos usadas en los campamentos?",
-          "options": [
-            "Por la contaminación y los incendios forestales",
-            "Porque ya nadie sabe construirlas",
-            "Porque la comida llega preparada",
-            "Porque están prohibidas por ley"
-          ],
-          "answer": 0,
-          "explanation": "Con la llegada de la tecnología, y teniendo en cuenta la contaminación y los incendios forestales, las cocinas serán cada vez menos usadas. Aun así, es importante que los campistas aprendan a elaborarlas y puedan utilizarlas con la práctica.",
-          "source": {
-            "booklet": "tecnicas",
-            "page": 40,
-            "topic": "construcciones"
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "statement": "¿De qué está compuesto el menaje del campista?",
-          "options": [
-            "Plato pando, plato hondo, y los cubiertos o marmita",
-            "Linterna, pilas y bolsa plástica",
-            "Jabonera, cortaúñas y espejo metálico",
-            "Carpa, sobrecarpa y varillaje"
-          ],
-          "answer": 0,
-          "explanation": "El menaje se compone del plato pando, el hondo, y los cubiertos o marmita. Se recomienda llevarlo en un empaque individual; los metálicos permiten cocinar en ellos, pero con cuidado porque se pueden quemar.",
-          "source": {
-            "booklet": "tecnicas",
-            "page": 45,
-            "topic": "equipamiento"
-          }
-        },
+        
+       
         {
           "type": "multiple_choice",
           "statement": "¿Por qué se recomiendan las linternas con bombillos LED?",
