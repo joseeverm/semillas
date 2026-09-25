@@ -1,0 +1,225 @@
+{
+  "unit": "salud",
+  "lessons": [
+    {
+      "id": "aspirante-salud-prevencion-01",
+      "title": "Niveles de prevención y concepto de salud",
+      "xp": 20,
+      "questions": [
+        {
+          "type": "matching",
+          "statement": "Relaciona cada nivel de prevención con el momento en que actúa, según la OMS.",
+          "pairs": [
+            {
+              "left": "Prevención primaria",
+              "right": "Actúa antes de que el individuo se enferme"
+            },
+            {
+              "left": "Prevención secundaria",
+              "right": "Detecta y trata la enfermedad en estados muy tempranos"
+            },
+            {
+              "left": "Prevención terciaria",
+              "right": "Actúa con la enfermedad ya instaurada, para evitar complicaciones"
+            }
+          ],
+          "explanation": "Los tres niveles se ordenan según el estado de salud: antes de enfermar (primaria), al inicio de la enfermedad (secundaria) y en plena enfermedad (terciaria).",
+          "source": {
+            "booklet": "salud",
+            "page": 12,
+            "topic": "Niveles de prevención OMS"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "Una jornada de vacunación aplicada a niños sanos para que no contraigan una enfermedad corresponde a la...",
+          "options": [
+            "Prevención primaria",
+            "Prevención secundaria",
+            "Prevención terciaria",
+            "Rehabilitación clínica"
+          ],
+          "answer": 0,
+          "explanation": "Vacunar a personas sanas busca evitar la aparición de la enfermedad, y eso es lo que define a la prevención primaria: actuar antes de enfermar.",
+          "source": {
+            "booklet": "salud",
+            "page": 12,
+            "topic": "Prevención primaria - aplicación"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "Según la OMS, ¿cómo se define la salud?",
+          "options": [
+            "Un estado de completo bienestar físico, mental y social, no solo la ausencia de enfermedad",
+            "La ausencia de enfermedades o afecciones en el cuerpo",
+            "El buen funcionamiento de todos los órganos vitales",
+            "La capacidad de realizar actividad física sin fatiga"
+          ],
+          "answer": 0,
+          "explanation": "El concepto de salud va más allá de no estar enfermo: abarca lo físico, lo mental y lo social. Reducirlo a la ausencia de enfermedad es el error más común.",
+          "source": {
+            "booklet": "salud",
+            "page": 13,
+            "topic": "Definición de salud OMS"
+          }
+        },
+        {
+          "type": "true_false",
+          "statement": "Según la cartilla, el concepto de salud se limita a la ausencia de enfermedades físicas.",
+          "answer": false,
+          "explanation": "La salud incluye el bienestar físico, mental y social. La cartilla menciona además la salud espiritual, ligada a creer en un poder superior.",
+          "source": {
+            "booklet": "salud",
+            "page": 13,
+            "topic": "Alcance del concepto de salud"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "statement": "La Declaración de los Derechos Humanos establece que el goce pleno de la salud es uno de los derechos {blank} de todo ser humano.",
+          "options": [
+            "fundamentales",
+            "opcionales",
+            "adquiridos",
+            "comerciales"
+          ],
+          "answer": [
+            "fundamentales"
+          ],
+          "explanation": "Es un derecho fundamental, sin distinción de ninguna clase. De ahí que cuidar la salud propia y ajena sea también una responsabilidad.",
+          "source": {
+            "booklet": "salud",
+            "page": 13,
+            "topic": "Salud como derecho"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "¿En qué se basa la llamada 'salud espiritual' según la cartilla?",
+          "options": [
+            "En que la persona cree en un poder superior y eso le da paz, conformidad y seguridad",
+            "En practicar una religión organizada todos los días",
+            "En meditar a diario para reducir el estrés físico",
+            "En mantener una dieta y un ejercicio equilibrados"
+          ],
+          "answer": 0,
+          "explanation": "La cartilla la define por la creencia en un poder superior y el bienestar que produce, no por una religión concreta ni por hábitos físicos.",
+          "source": {
+            "booklet": "salud",
+            "page": 13,
+            "topic": "Salud espiritual"
+          }
+        }
+      ]
+    },
+    {
+      "id": "aspirante-salud-respondiente-01",
+      "title": "Primer respondiente",
+      "xp": 20,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "statement": "¿Qué es un primer respondiente?",
+          "options": [
+            "La persona que, con conocimientos básicos, da el primer contacto ante una urgencia mientras llegan los servicios de salud",
+            "El médico que atiende al paciente cuando llega al hospital",
+            "El personal de la ambulancia que traslada al herido",
+            "El familiar legalmente responsable de la víctima"
+          ],
+          "answer": 0,
+          "explanation": "Lo clave es que es el primer contacto, antes de que lleguen los profesionales. Puede serlo cualquiera: un taxista, un panadero, un estudiante.",
+          "source": {
+            "booklet": "salud",
+            "page": 13,
+            "topic": "Definición de primer respondiente"
+          }
+        },
+        {
+          "type": "ordering",
+          "statement": "Ordena los tres principios básicos que debe aplicar un primer respondiente, en el orden correcto.",
+          "items": [
+            "Proteger",
+            "Llamar a la línea de emergencia",
+            "Socorrer"
+          ],
+          "answer": [
+            "Proteger",
+            "Llamar a la línea de emergencia",
+            "Socorrer"
+          ],
+          "explanation": "Primero proteger (evitar más víctimas), luego llamar para activar el sistema de emergencias, y por último socorrer, que es la finalidad de los primeros auxilios.",
+          "source": {
+            "booklet": "salud",
+            "page": 13,
+            "topic": "Principios del primer respondiente - orden"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "Al aplicar el principio de 'proteger', ¿a quién debe cuidar primero el primer respondiente?",
+          "options": [
+            "A sí mismo",
+            "A la víctima",
+            "Al resto de la comunidad",
+            "A los curiosos del lugar"
+          ],
+          "answer": 0,
+          "explanation": "Primero a sí mismo: un rescatista que se lesiona no puede ayudar a nadie. Después a la víctima y, por último, al resto de la comunidad.",
+          "source": {
+            "booklet": "salud",
+            "page": 14,
+            "topic": "Principio de proteger - orden interno"
+          }
+        },
+        {
+          "type": "true_false",
+          "statement": "Entre las características de un buen primer respondiente están mantener la calma y actuar con rapidez.",
+          "answer": true,
+          "explanation": "La cartilla añade el deseo de ayudar, ser solidario y respetuoso, y en lo posible estar capacitado para iniciar acciones.",
+          "source": {
+            "booklet": "salud",
+            "page": 13,
+            "topic": "Características del primer respondiente"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "statement": "Según la cartilla, ¿quién puede ser un primer respondiente?",
+          "options": [
+            "Cualquier persona que quiera y pueda auxiliar, como un taxista o un estudiante",
+            "Únicamente el personal médico capacitado",
+            "Solo los socorristas certificados",
+            "Solo las personas mayores de edad con formación"
+          ],
+          "answer": 0,
+          "explanation": "La cartilla insiste en que puede ser cualquiera que presencie el evento y quiera ayudar; lo decisivo es la rapidez con que la víctima recibe atención.",
+          "source": {
+            "booklet": "salud",
+            "page": 13,
+            "topic": "Quién puede ser primer respondiente"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "statement": "El segundo principio del primer respondiente es {blank} a la línea de emergencia, dando información clara.",
+          "options": [
+            "llamar",
+            "socorrer",
+            "proteger",
+            "trasladar"
+          ],
+          "answer": [
+            "llamar"
+          ],
+          "explanation": "Se ubica entre proteger (primero) y socorrer (tercero). Activar el sistema de emergencias a tiempo es fundamental para el pronóstico de la víctima.",
+          "source": {
+            "booklet": "salud",
+            "page": 13,
+            "topic": "Segundo principio - llamar"
+          }
+        }
+      ]
+    }
+  ]
+}
